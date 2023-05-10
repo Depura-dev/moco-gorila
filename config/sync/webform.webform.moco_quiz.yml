@@ -1,0 +1,384 @@
+uuid: 13efac99-1ed8-419b-9580-a828f5eb5cf2
+langcode: es
+status: open
+dependencies:
+  module:
+    - handler_custom
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: moco_quiz
+title: 'Moco Quiz'
+description: ''
+category: ''
+elements: |-
+  1:
+    '#type': webform_wizard_page
+    '#title': '1'
+    '#open': true
+    wf_gorillas:
+      '#type': radios
+      '#title': '¿Con qué manada de Gorilas te identificas más? '
+      '#options':
+        rockstar: Rockstar
+        galan: Galán
+        gamer: Gamer
+        punk: Punk
+      '#required': true
+  2:
+    '#type': webform_wizard_page
+    '#title': '2'
+    '#open': true
+    wf_class_school:
+      '#type': radios
+      '#title': ' ¿ Quién eres en el salón de clase? '
+      '#options':
+        punk: 'Eres el chico que se sienta atrás y siempre habla durante clase.'
+        galan: 'Eres el que siempre llega tarde pero bien peinado'
+        gamer: 'Eres el chico al que se le pueden olvidar los lápices, pero jamás sus súper audífonos '
+        rockstar: 'Eres el más popular, nadie se resiste a ti'
+      '#required': true
+  3:
+    '#type': webform_wizard_page
+    '#title': '3'
+    '#open': true
+    wf_party:
+      '#type': radios
+      '#title': ' En una fiesta de colores, ¿Qué llevarías? '
+      '#options':
+        rockstar: Rojo
+        gamer: Azul
+        galan: Verde
+        punk: Amarillo
+      '#required': true
+  4:
+    '#type': webform_wizard_page
+    '#title': '4'
+    '#open': true
+    wf_music:
+      '#type': radios
+      '#title': ' ¿Qué música no puedes dejar de escuchar?'
+      '#options':
+        rockstar: 'La música de mis papás'
+        galan: 'Musiquita que me haga mover el esqueleto'
+        gamer: 'La que me transporte a otros mundos'
+        punk: 'Toda la que me haga sacudir la cabeza'
+      '#required': true
+  5:
+    '#type': webform_wizard_page
+    '#title': '5'
+    wf_favorite_date:
+      '#type': radios
+      '#title': '¿Cuál es tu fecha favorita del año? '
+      '#options':
+        punk: Halloween
+        galan: 'San Valentin'
+        rockstar: Navidad
+        gamer: 'Día del niño'
+      '#required': true
+  6:
+    '#type': webform_wizard_page
+    '#title': '6'
+    '#open': true
+    wf_friends:
+      '#type': radios
+      '#title': ' ¡Es noche de Netflix n chill con tus amigos! ¿Qué van a ver? '
+      '#options':
+        punk: 'Radio Rebel de Disney'
+        rockstar: 'Spider-Man: Homecoming'
+        galan: 'El stand de los besos '
+        gamer: 'Outer Banks'
+        punk_2: Dope
+        rockstar_2: 'Good Boys'
+        galan_2: Euphoria
+        gamer_2: 'Stranger Things'
+  7:
+    '#type': webform_wizard_page
+    '#title': '7'
+    '#open': true
+    wf_friday:
+      '#type': radios
+      '#title': 'Es viernes y acabas de salir del colegio, ¿qué vas a hacer?'
+      '#options':
+        rockstar: 'Ir al centro comercial con tus amigos'
+        galan: 'Ir a la casa de tu mejor amigo'
+        gamer: 'Jugar videojuegos en línea'
+        punk: 'Tocar algún instrumento'
+      '#required': true
+  8:
+    '#type': webform_wizard_page
+    '#title': '8'
+    wf_hair:
+      '#type': radios
+      '#title': '¿Cuál es el mejor peinado de todos los tiempos?'
+      '#options':
+        punk: 'Con cresta for ever ¡yeaaah! '
+        galan: 'A lo Maluma baby'
+        rockstar: 'No te peinas, es un look #rock’n’roll'
+        gamer: 'Con mechón y mi gorra favorita'
+      '#required': true
+  9:
+    '#type': webform_wizard_page
+    '#title': '9'
+    '#open': true
+    wf_sport:
+      '#type': radios
+      '#title': '¿A qué deporte te inscribirías con tus amigos? '
+      '#options':
+        rockstar: Fútbol
+        gamer: Basketball
+        punk: Boxeo
+        galan: Tenis
+      '#required': true
+  10:
+    '#type': webform_wizard_page
+    '#title': '10'
+    wf_closet:
+      '#type': radios
+      '#title': '¿Qué es lo qué más te gusta de tu closet? '
+      '#options':
+        rockstar: 'My leather jacket'
+        gamer: 'Mis Gorras'
+        punk: 'La camiseta de mi banda favorita'
+        galan: 'Los tenis más a la moda'
+      '#required': true
+  11:
+    '#type': webform_wizard_page
+    '#title': '11'
+    '#open': true
+    wf_social:
+      '#type': radios
+      '#title': '¿En cuál de estas redes sociales pasas más tiempo?'
+      '#options':
+        galan: Instagram
+        rockstar: Tiktok
+        gamer: Twitch
+        punk: Youtube
+      '#required': true
+  12:
+    '#type': webform_wizard_page
+    '#title': '12'
+    '#open': true
+    wf_see_friends:
+      '#type': radios
+      '#title': '¿Cómo crees que te ven tus amigos?'
+      '#options':
+        rockstar: Divertido
+        punk: Atrevido
+        gamer: Relajado
+        galan: Coqueto
+      '#required': true
+  13:
+    '#type': webform_wizard_page
+    '#title': '13'
+    '#open': true
+    wf_word_define:
+      '#type': radios
+      '#title': '¿Qué palabra te define?'
+      '#options':
+        galan: Aesthetic
+        punk: YOLO
+        rockstar: Cool
+        gamer: Gamer
+      '#required': true
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Enviar
+    '#wizard_prev__label': Previo
+    '#wizard_next__label': Siguiente
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: '[webform_submission:values:?]'
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  handler_for_moco_of_gorila:
+    id: handler_custom
+    handler_id: handler_for_moco_of_gorila
+    label: 'Handler for Moco of Gorila'
+    notes: 'Logica de Redirección'
+    status: true
+    conditions: {  }
+    weight: 0
+    settings: {  }
+variants: {  }

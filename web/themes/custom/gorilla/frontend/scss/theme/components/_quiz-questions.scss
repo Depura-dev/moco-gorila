@@ -1,0 +1,17 @@
+// Tipos de quiz-card : single, four, eight
+$type: (1: "four", 2: "single", 3: "four", 4: "four", 5: "four", 6: "eight", 7: "single", 8: "four", 9: "four", 10: "four", 11: "four", 12: "four", 13: "four");
+
+@for $i from 1 through length($type) {
+  $id: '#edit-#{$i}';
+  $source: 'moco-quiz/edit-#{$i}';
+
+  @if map-get($type , $i) == "single" {
+    @include quiz-card-single($id, $source);
+
+  } @else if map-get($type , $i) == "four" {
+      @include quiz-card-multiple-four($id, $source);
+
+  } @else {
+    @include quiz-card-multiple-eight($id, $source);
+  }
+}

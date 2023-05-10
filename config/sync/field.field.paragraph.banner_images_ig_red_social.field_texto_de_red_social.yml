@@ -1,0 +1,19 @@
+uuid: 2ab09979-b73b-47aa-9659-a466d4a50e23
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texto_de_red_social
+    - paragraphs.paragraphs_type.banner_images_ig_red_social
+id: paragraph.banner_images_ig_red_social.field_texto_de_red_social
+field_name: field_texto_de_red_social
+entity_type: paragraph
+bundle: banner_images_ig_red_social
+label: 'Texto de red social'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

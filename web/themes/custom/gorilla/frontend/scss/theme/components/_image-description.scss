@@ -1,0 +1,74 @@
+.container-image-description {
+  &__container-image {
+    //?prueba de responsive puntos ---------
+    @include fluid-aspect(6 4, "img");
+    object-fit: cover;
+    @include from(s) {
+      @include fluid-aspect(3 2, "img");
+    }
+    @include from(m) {
+      @include fluid-aspect(3 2, "img");
+    }
+    @include from(l) {
+      @include fluid-aspect(7 2, "img");
+    }
+  }
+  &__container-text {
+    background-color: $orange;
+  }
+  &__container-text-items {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 10% 0 12%;
+
+    @include from(s) {
+      padding: 5% 10% 0 10%;
+    }
+    @include from(m) {
+      padding: 5% 20% 0% 10%;
+    }
+    @include from(l) {
+      padding: 5% 20% 0% 10%;
+    }
+  }
+
+  &__title-bloque {
+    padding: 10% 18% 0 13%;
+    @include from(s) {
+      padding: 5% 10% 0 10%;
+    }
+    @include from(m) {
+      padding: 5% 1% 0% 10%;
+    }
+    @include from(l) {
+      padding: 10% 20% 0 17%;
+    }
+  }
+  &__content-description {
+    color: $white;
+    padding: 5% 0 0 0;
+
+    @include from(s) {
+      padding: 0 0 5% 0;
+    }
+
+    @include from(l) {
+      padding: 10% 5% 0 10%;
+    }
+  }
+
+  &__link-bloque {
+    padding: 12% 0 20% 0;
+    @include from(s) {
+      padding: 3% 0 10% 0;
+    }
+    @include from(m) {
+      padding: 3% 0 10% 0;
+    }
+
+    @include from(l) {
+      padding: 10% 5% 10% 10%;
+    }
+  }
+}

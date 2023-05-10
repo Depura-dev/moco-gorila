@@ -1,0 +1,26 @@
+uuid: ea96dcc9-2455-410c-b58f-331d1e6159ef
+langcode: es
+status: true
+dependencies:
+  module:
+    - dropdown_language
+    - mobile_detect
+  theme:
+    - gorilla
+id: dropdownlanguage
+theme: gorilla
+region: nav_branding
+weight: 0
+provider: null
+plugin: 'dropdown_language:language_interface'
+settings:
+  id: 'dropdown_language:language_interface'
+  label: 'Dropdown Language'
+  label_display: '0'
+  provider: dropdown_language
+  labels: null
+visibility:
+  mobile_detect_device_type:
+    id: mobile_detect_device_type
+    negate: null
+    devices: {  }

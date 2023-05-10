@@ -1,0 +1,38 @@
+uuid: 27a68181-b5ba-4faf-9984-b1db60ec35e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_imagen_banner_red_social_i
+    - paragraphs.paragraphs_type.banner_images_ig_red_social
+  module:
+    - image
+id: paragraph.banner_images_ig_red_social.field_imagen_banner_red_social_i
+field_name: field_imagen_banner_red_social_i
+entity_type: paragraph
+bundle: banner_images_ig_red_social
+label: 'Imagen banner red social ig'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

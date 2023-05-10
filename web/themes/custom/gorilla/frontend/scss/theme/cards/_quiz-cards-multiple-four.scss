@@ -1,0 +1,36 @@
+@mixin quiz-card-multiple-four($id, $source) {
+  @include quiz-card-multiple($id, $source);
+
+  #{$id}{
+    .fieldset-wrapper {
+      & > div {
+        & > div {
+          @for $i from 1 through 4 {
+            &:nth-child(#{$i}) {
+              background-color: $white;
+
+              @if $i > 4 {
+                display: none;
+              }
+
+              &::before {
+                @include imageBg(
+                  '../img/#{$source}/imagen#{$i}.svg', 25vw, 100%
+                );
+                max-height: rem(190px);
+                content: '';
+                display: block;
+
+
+                @include from(l){
+                  height: 12vw;
+                }
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

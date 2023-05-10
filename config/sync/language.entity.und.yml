@@ -1,0 +1,11 @@
+uuid: f9a1c7f0-6128-4656-a51b-7b86f663afce
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: eNX6lLCKDaY83nCMh20My---y03KbiFlv802DKCCpvg
+id: und
+label: 'Sin especificar'
+direction: ltr
+weight: 2
+locked: true

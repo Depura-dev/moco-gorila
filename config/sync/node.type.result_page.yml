@@ -1,0 +1,17 @@
+uuid: 4192d87e-f739-4b64-a403-eece555b5ff9
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Result Page'
+type: result_page
+description: 'Resultado de Quiz Moco De Gorila'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

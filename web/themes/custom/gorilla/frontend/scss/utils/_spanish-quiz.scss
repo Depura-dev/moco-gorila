@@ -1,0 +1,43 @@
+html[lang="es"] {
+  //pregunta 1
+  @include option-hidden(1, 3);
+  @include option-hidden(1, 4);
+  //pregunta 2
+  @include option-hidden(2, 2);
+  @include option-hidden(2, 4);
+  //pregunta 3
+  @include option-hidden(3, 1);
+  @include option-hidden(3, 3);
+  //pregunta 4
+  @include option-hidden(4, 1);
+  @include option-hidden(4, 2);
+  //pregunta 5
+  @include option-hidden(5, 2);
+  @include option-hidden(5, 3);
+  //pregunta 6
+  @include option-hidden(6, 2);
+  @include option-hidden(6, 3);
+  @include option-hidden(6, 6);
+  @include option-hidden(6, 7);
+  //pregunta 7
+  @include option-hidden(7, 1);
+  @include option-hidden(7, 2);
+  //pregunta 8
+  @include option-hidden(8, 2);
+  @include option-hidden(8, 3);
+  //pregunta 9
+  @include option-hidden(9, 1);
+  @include option-hidden(9, 4);
+  //pregunta 10
+  @include option-hidden(10, 1);
+  @include option-hidden(10, 4);
+  //pregunta 11
+  @include option-hidden(11, 1);
+  @include option-hidden(11, 2);
+  //pregunta 12
+  @include option-hidden(12, 1);
+  @include option-hidden(12, 4);
+  //pregunta 13
+  @include option-hidden(13, 1);
+  @include option-hidden(13, 3);
+}

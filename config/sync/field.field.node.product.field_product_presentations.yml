@@ -1,0 +1,29 @@
+uuid: c8398a78-1ac7-4260-af46-bb6f5fc139c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_presentations
+    - node.type.product
+    - taxonomy.vocabulary.presentations
+id: node.product.field_product_presentations
+field_name: field_product_presentations
+entity_type: node
+bundle: product
+label: 'Product Presentations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      presentations: presentations
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

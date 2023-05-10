@@ -1,0 +1,41 @@
+{%
+set classes = [
+
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+not paragraph.isPublished() ? 'paragraph--unpublished',
+'image-description-paragraph'
+]
+%}
+
+{% block paragraph %}
+<section class="container-image-description p-0" {{ attributes.addClass(classes) }}>
+  {% set imagen_bloque = content.field_imagen_bloque[0] %}
+  {% set titulo_bloque = content.field_titulo_bloque[0] %}
+  {% set description_bloque = content.field_descripcion_bloque[0] %}
+  {% set texto_link_bloque = content.field_texto_boton_link[0] %}
+  {% set link_bloque = content.field_link_boton_bloque[0] %}
+  <div class="row g-0 container-image-description__container-about-moco">
+    <div class="col-lg-6 container-image-description__container-image">
+      {# Imagen #}
+      {{ imagen_bloque }}
+    </div>
+    <div class="col-lg-6 container-image-description__container-text">
+      <header class="container-image-description__title-bloque">
+        <h2>{{ titulo_bloque}}</h2>
+      </header>
+      <div class="container-image-description__container-text-items">
+        <p class="container-image-description__content-description">
+          {{ description_bloque }}
+        </p>
+        <div class="container-image-description__link-bloque">
+          <a href="{{link_bloque}}" class="btn-primary">
+           {{ texto_link_bloque }}
+          </a>
+        </div>
+      </div>
+    </div>
+  <div>
+</section>
+{% endblock paragraph %}

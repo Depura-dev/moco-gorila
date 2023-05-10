@@ -1,0 +1,16 @@
+@mixin option-hidden($n-id, $n-option) {
+  $id: '#edit-#{$n-id}';
+
+  #{$id}{
+    .fieldset-wrapper {
+      & > div {
+        & > div {
+          &:nth-child(#{$n-option}){
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+

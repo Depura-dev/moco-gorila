@@ -1,0 +1,21 @@
+uuid: d42bb501-3263-4314-a4cf-cf8abcee6e6e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etiqueta
+    - node.type.result_page
+  module:
+    - metatag
+id: node.result_page.field_etiqueta
+field_name: field_etiqueta
+entity_type: node
+bundle: result_page
+label: Etiqueta
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

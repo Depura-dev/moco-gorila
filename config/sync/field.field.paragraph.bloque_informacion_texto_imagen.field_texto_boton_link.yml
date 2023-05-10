@@ -1,0 +1,19 @@
+uuid: ea80a243-6e7a-4118-83e2-a60e585d582f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texto_boton_link
+    - paragraphs.paragraphs_type.bloque_informacion_texto_imagen
+id: paragraph.bloque_informacion_texto_imagen.field_texto_boton_link
+field_name: field_texto_boton_link
+entity_type: paragraph
+bundle: bloque_informacion_texto_imagen
+label: 'Texto boton link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

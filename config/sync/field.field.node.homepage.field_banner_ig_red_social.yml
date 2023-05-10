@@ -1,0 +1,73 @@
+uuid: 131ce2bc-6968-45af-a15d-836efe7858e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner_ig_red_social
+    - node.type.homepage
+    - paragraphs.paragraphs_type.banner_images_ig_red_social
+  module:
+    - entity_reference_revisions
+id: node.homepage.field_banner_ig_red_social
+field_name: field_banner_ig_red_social
+entity_type: node
+bundle: homepage
+label: 'Banner ig red social'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      banner_images_ig_red_social: banner_images_ig_red_social
+    negate: 0
+    target_bundles_drag_drop:
+      age_gate:
+        weight: 16
+        enabled: false
+      banner_images_ig_red_social:
+        weight: 17
+        enabled: true
+      banner_mapa_home:
+        weight: 18
+        enabled: false
+      bloque_informacion_imagen_texto:
+        weight: 19
+        enabled: false
+      bloque_informacion_texto_imagen:
+        weight: 20
+        enabled: false
+      full_text:
+        weight: 21
+        enabled: false
+      image_banner:
+        weight: 22
+        enabled: false
+      main_banner:
+        weight: 23
+        enabled: false
+      main_slider:
+        weight: 24
+        enabled: false
+      main_slider_home:
+        weight: 25
+        enabled: false
+      main_slider_item:
+        weight: 26
+        enabled: false
+      main_slider_item_home:
+        weight: 27
+        enabled: false
+      producto_descatado_item:
+        weight: 29
+        enabled: false
+      productos_destacados_bloque:
+        weight: 28
+        enabled: false
+      youtube_video:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

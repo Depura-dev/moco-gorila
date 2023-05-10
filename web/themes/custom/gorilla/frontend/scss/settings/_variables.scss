@@ -1,0 +1,64 @@
+// Colors
+$blue: #0097CE;
+$blue-2: #005FB6;
+$blue-lt: #33BEF0;
+$blue-dk: #0F2861;
+$green: #38D430;
+$green-lt:#80EE76;
+$green-dk:#03814F;
+$yellow: #FFD200;
+$orange: #FF8A00;
+$red: #FE3B1F;
+$purple: #4E2583;
+$purple-lt: #816DAF;
+$black: #000000;
+$white: #FFFFFF;
+
+//Color palette
+$gamer: (
+  'primary': $blue,
+  'secondary': $blue-dk,
+);
+
+$punk: (
+  'primary': $yellow,
+  'secondary': $orange,
+);
+
+$galan: (
+  'primary': $green,
+  'secondary': $green-dk,
+);
+
+$rockstar: (
+  'primary': $red,
+  'secondary': $blue-2,
+);
+
+$color-palette: ($gamer, $punk, $galan, $rockstar);
+
+// Fonts
+$font-primary: 'Jost', sans-serif;
+$font-secondary: 'FatFrank';
+
+// Media queries
+$breakpoints-min: (
+  's': 576px,
+  'm': 768px,
+  'l': 992px,
+  'xl': 1470px,
+);
+
+$breakpoints-max: (
+  'xs': map-get($breakpoints-min, 's') - 1px,
+  's': map-get($breakpoints-min, 'm') - 1px,
+  'm': map-get($breakpoints-min, 'l') - 1px,
+  'l': map-get($breakpoints-min, 'xl') - 1px,
+);
+
+$container-max-widths: (
+  's': 540px,
+  'm': 720px,
+  'l': 960px,
+  'xl': 1320px,
+);

@@ -1,0 +1,56 @@
+%form-age-gate {
+  align-items: center;
+  background-color: $white;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: space(1);
+  width: 300px;
+
+  @include from(l){
+    width: rem(475px);
+  }
+
+  div {
+    margin: 0;
+    margin-bottom: space(.25);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h3, pre {
+    @extend %h3;
+    background-color: $white;
+    box-shadow: none;
+    color: $purple;
+    font-size: rem(25px);
+    text-transform: uppercase;
+
+    @include from(l){
+      font-size: rem(32px);
+    }
+  }
+
+  label {
+    @extend %paragraph;
+  }
+
+  .form-item {
+    padding-right: space(.25);
+  }
+
+  input, select {
+    border: 2px solid $purple;
+    border-radius: 10px;
+    color: $purple;
+    font-weight: 500;
+
+  }
+
+  .button--primary {
+    border-radius: rem(35px);
+  }
+}

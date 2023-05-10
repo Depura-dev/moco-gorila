@@ -1,0 +1,67 @@
+uuid: e8e96941-c6b7-4839-8af0-9f97652e4ea7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_main_slider_home_item
+    - paragraphs.paragraphs_type.main_slider_home
+    - paragraphs.paragraphs_type.main_slider_item_home
+  module:
+    - entity_reference_revisions
+id: paragraph.main_slider_home.field_main_slider_home_item
+field_name: field_main_slider_home_item
+entity_type: paragraph
+bundle: main_slider_home
+label: 'Main slider Home Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      main_slider_item_home: main_slider_item_home
+    negate: 0
+    target_bundles_drag_drop:
+      age_gate:
+        weight: 14
+        enabled: false
+      bloque_informacion_imagen_texto:
+        weight: 15
+        enabled: false
+      bloque_informacion_texto_imagen:
+        weight: 16
+        enabled: false
+      full_text:
+        weight: 17
+        enabled: false
+      image_banner:
+        weight: 18
+        enabled: false
+      main_banner:
+        weight: 19
+        enabled: false
+      main_slider:
+        weight: 20
+        enabled: false
+      main_slider_home:
+        weight: 21
+        enabled: false
+      main_slider_item:
+        weight: 22
+        enabled: false
+      main_slider_item_home:
+        weight: 23
+        enabled: true
+      producto_descatado_item:
+        weight: 25
+        enabled: false
+      productos_destacados_bloque:
+        weight: 24
+        enabled: false
+      youtube_video:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

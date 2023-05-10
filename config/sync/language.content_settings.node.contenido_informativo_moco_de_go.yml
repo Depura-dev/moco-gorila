@@ -1,0 +1,16 @@
+uuid: be359c9f-a3bb-4197-956c-5e521b4661bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenido_informativo_moco_de_go
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.contenido_informativo_moco_de_go
+target_entity_type_id: node
+target_bundle: contenido_informativo_moco_de_go
+default_langcode: site_default
+language_alterable: true

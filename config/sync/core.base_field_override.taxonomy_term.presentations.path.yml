@@ -1,0 +1,20 @@
+uuid: df97db5a-ddf8-42eb-b431-f3082affd153
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.presentations
+  module:
+    - path
+id: taxonomy_term.presentations.path
+field_name: path
+entity_type: taxonomy_term
+bundle: presentations
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

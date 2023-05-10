@@ -1,0 +1,12 @@
+%scroll-bar{
+  &::-webkit-scrollbar {
+    @extend %cursor;
+    width: rem(10px);
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $white;
+    border-radius: rem(20px);
+  }
+}

@@ -1,0 +1,19 @@
+uuid: 8c0f6f8e-17a1-4b8e-ace2-27d6415d6520
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_de_producto_destaca
+    - paragraphs.paragraphs_type.producto_descatado_item
+id: paragraph.producto_descatado_item.field_titulo_de_producto_destaca
+field_name: field_titulo_de_producto_destaca
+entity_type: paragraph
+bundle: producto_descatado_item
+label: 'Titulo de Producto Destacado'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

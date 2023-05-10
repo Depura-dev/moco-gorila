@@ -1,0 +1,77 @@
+elements: |
+  wf_gorillas:
+    '#title': 'with which one of these Gorila packs do you identify the most?'
+  wf_class_school:
+    '#title': 'Who are you in the classroom?'
+    '#options':
+      punk: 'You''re the guy who sits all the way in the back and is always talking during class'
+      galan: 'You''re the guy who''s always late but well dressed'
+      gamer: 'You’re the guy who can forget his pencils, but never his super headphones'
+      rockstar: 'You’re irresistible, no one can escape your charm'
+  wf_party:
+    '#title': 'It’s a color party, what are you wearing?'
+    '#options':
+      rockstar: Red
+      gamer: Blue
+      galan: Green
+      punk: Yellow
+  wf_music:
+    '#title': 'What music can''t you stop listening to?'
+    '#options':
+      rockstar: 'My folk''s music'
+      galan: 'The music that makes me shale my bootty'
+      gamer: 'The one gets me into another world '
+      punk: 'Anything that makes me shake my head '
+  wf_favorite_date:
+    '#title': 'What is your favorite date of the year?'
+    '#options':
+      galan: 'Valentine''s Day'
+      rockstar: Christmas
+      gamer: '4th of july '
+  wf_friends:
+    '#title': 'It’s movie night with your friends! What are you watching?'
+    '#options':
+      punk: 'Radio Rebel of Disney'
+      galan: 'The kissing booth'
+  wf_friday:
+    '#title': 'It''s Friday and school’s out, what are your plans for the night?'
+    '#options':
+      rockstar: 'Get your friends to go to the premier of a new movie you’ve been dying to see '
+      galan: 'Going out with the girl you like'
+      gamer: 'Play videogames all day long while you listen to your favorite tunes '
+      punk: 'Play your favorite instrument, whether it’s the sax, a guitar or the piano'
+  wf_hair:
+    '#title': 'What’s the best hairstyle of all time?'
+    '#options':
+      punk: 'Crest hairstyle forever, yeaaah!'
+      galan: 'Maluma’s hairstyle all the way babe'
+      rockstar: 'Don''t comb your hair, it''s a #rock''n''roll look'
+      gamer: 'With locks and my favorite baseball cap'
+  wf_sport:
+    '#title': 'What sport would you play with your friends?'
+    '#options':
+      rockstar: Football
+      punk: Boxing
+      galan: Tennis
+  wf_closet:
+    '#title': 'What’s your favorite thing in your closet?'
+    '#options':
+      rockstar: 'My leather jacket '
+      gamer: 'My baseball caps'
+      punk: 'My favorite band''s t-shirt'
+      galan: 'The most fashionable tennis shoes '
+  wf_social:
+    '#title': 'Let’s talk social media, on which one do you spend most of your time?'
+  wf_see_friends:
+    '#title': 'How do you friends see you as?'
+    '#options':
+      rockstar: Fun
+      punk: Edgy
+      gamer: Chill
+      galan: Flirty
+  wf_word_define:
+    '#title': 'What word defines you?'
+  actions:
+    '#submit__label': Send
+    '#wizard_prev__label': Previous
+    '#wizard_next__label': Next

@@ -1,0 +1,7 @@
+%webform-button, .webform-button{
+  &--submit {
+    @extend %button-primary;
+    margin-top: space(.75);
+  }
+
+}

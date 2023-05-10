@@ -1,0 +1,87 @@
+body,
+html {
+  height: 100%;
+  @extend %cursor;
+}
+
+body {
+  @extend %scroll-bar ;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  button:not(:disabled), [type=button]:not(:disabled){
+    @extend %cursor-pointer;
+  }
+}
+
+body:not(.root) {
+  background-color: $blue;
+  padding-top: 83px;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+input,
+textarea {
+  &::placeholder {
+    color: gray;
+  }
+
+  &:active {
+    &::placeholder {
+      color: gray;
+    }
+  }
+}
+
+select {
+  @extend %cursor;
+}
+
+input[type="number"] {
+  appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    margin: 0;
+    appearance: none;
+  }
+}
+
+
+.region {
+  .alert-error {
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+  }
+
+  //temporal
+  &.region-breadcrumb {
+    display: none;
+  }
+}
+
+#toolbar-bar {
+  z-index: 9999;
+
+  div,
+  a {
+    font-size: rem(16px);
+    line-height: 1.2;
+  }
+}
+
+section{
+  padding: 0 space(1.25);
+
+  @include from(s) {
+    padding: 0;
+  }
+}

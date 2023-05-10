@@ -1,0 +1,121 @@
+$zindex-pagination: 101;
+
+.slider-controls {
+  @include center("vertical");
+  $self: &;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  padding: 0;
+
+  &__arrow {
+    color: $white;
+    cursor: pointer;
+    font-style: normal;
+    font-size: rem(50px);
+    line-height: 1;
+    pointer-events: all;
+  }
+
+  &__prev {
+    @include imageBg("../img/icons/arrow_left.svg", rem(60px), rem(70px));
+    &:hover{@extend %cursor-pointer;}
+    @include from(l) {
+      height: rem(70px);
+      width: rem(90px);
+    }
+  }
+
+  &__next {
+    @include imageBg("../img/icons/arrow_right.svg", rem(60px), rem(70px));
+    &:hover{@extend %cursor-pointer;}
+    @include from(l) {
+      height: rem(70px);
+      width: rem(90px);
+    }
+  }
+
+  &__arrows {
+    @include center("both");
+    padding: 0 space(0.5);
+    top: 30%;
+    width: 100%;
+    z-index: $zindex-pagination;
+
+    @include from(l) {
+      top: 55%;
+      max-width: 1650px;
+    }
+  }
+
+  &__dots {
+    position: absolute;
+    bottom: initial;
+    width: 100%;
+    left: 0;
+    top: rem(20px);
+
+    @include from(s){
+      top: rem(620px);
+    }
+
+    @include from(l){
+      top: initial;
+      left: initial;
+      width: 41%;
+    }
+    .slick-dots {
+      @include center("horizontal");
+      bottom: 100%;
+      width: auto;
+      z-index: zindex-pagination;
+      pointer-events: all;
+
+      li {
+        vertical-align: middle;
+        width: rem(30px);
+
+        button {
+          &::before {
+            content: "";
+            display: block;
+            width: rem(30px);
+            height: 0;
+            background-color: $white;
+            border-radius: rem(3px);
+            border: rem(4px) solid $white;
+            &:hover {
+              background-color: $white;
+            }
+          }
+        }
+
+        &.slick-active button {
+          &::before {
+            background-color: $white;
+            border: rem(4px) solid $white;
+          }
+        }
+      }
+    }
+
+    &--black {
+      .slick-dots {
+        li {
+          button {
+            &::before {
+              background-color: $black;
+            }
+          }
+
+          &.slick-active button {
+            &::before {
+              background-color: transparent;
+              border: rem(6px) solid $black;
+            }
+          }
+        }
+      }
+    }
+  }
+}

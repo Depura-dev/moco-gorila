@@ -1,0 +1,10 @@
+uuid: 729c2caf-72a9-4029-a69f-0521ddd8c998
+langcode: es
+status: true
+dependencies: {  }
+id: productos_destacados_bloque
+label: 'Productos Destacados'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

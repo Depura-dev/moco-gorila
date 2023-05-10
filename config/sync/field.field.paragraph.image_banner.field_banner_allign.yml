@@ -1,0 +1,21 @@
+uuid: f7d2ea08-b6f8-453c-9b1d-493f9e08fb1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner_allign
+    - paragraphs.paragraphs_type.image_banner
+  module:
+    - options
+id: paragraph.image_banner.field_banner_allign
+field_name: field_banner_allign
+entity_type: paragraph
+bundle: image_banner
+label: 'Image Allignment'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,10 @@
+uuid: c0a13e72-751d-4a1e-8808-0b9aa906a0f4
+langcode: es
+status: true
+dependencies: {  }
+id: age_gate
+label: 'Age Gate'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

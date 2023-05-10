@@ -1,0 +1,25 @@
+uuid: c2f98909-6394-4b44-bea5-4f1d964a60f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_age_form
+    - paragraphs.paragraphs_type.age_gate
+  module:
+    - webform
+id: paragraph.age_gate.field_age_form
+field_name: field_age_form
+entity_type: paragraph
+bundle: age_gate
+label: 'Form Reference'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

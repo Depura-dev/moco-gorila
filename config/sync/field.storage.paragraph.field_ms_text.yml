@@ -1,0 +1,19 @@
+uuid: 2334bf2e-710b-47a8-9c06-b78bdbddccd5
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_ms_text
+field_name: field_ms_text
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

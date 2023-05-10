@@ -1,0 +1,57 @@
+.main-slider-home {
+  position: relative;
+
+  .container {
+    @include from(l) {
+      position: relative;
+    }
+    @include from(xl){
+      position: static;
+    }
+  }
+
+  &__image {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    @include from(l) {
+      justify-content: flex-start;
+    }
+
+    img {
+      height: 100%;
+      max-height: rem(600px);
+      width: auto;
+      max-width: 100%;
+      @include from(l) {
+      }
+    }
+  }
+
+  &__caption {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__text-content {
+    max-width: rem(700px);
+    display: flex;
+    flex-direction: column;
+    gap: space(1);
+    padding: space(1) space(2) space(2) space(1);
+    min-height: rem(300px);
+
+    @include from(l){
+    padding: 0 space(2) space(2) space(1);
+    }
+  }
+
+  &__description {
+    p{
+      color: $white;
+    }
+  }
+
+}

@@ -1,0 +1,23 @@
+uuid: c67b8924-cebf-4c58-8ebc-8e093245fa4b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color_identity
+    - paragraphs.paragraphs_type.full_text
+  module:
+    - options
+id: paragraph.full_text.field_color_identity
+field_name: field_color_identity
+entity_type: paragraph
+bundle: full_text
+label: 'Color Identity'
+description: 'Please choose the color identity.'
+required: false
+translatable: false
+default_value:
+  -
+    value: purples
+default_value_callback: ''
+settings: {  }
+field_type: list_string

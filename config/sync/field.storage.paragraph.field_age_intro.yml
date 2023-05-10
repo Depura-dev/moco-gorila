@@ -1,0 +1,19 @@
+uuid: 9e59e72e-657b-4d69-b531-448a04ddf62c
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_age_intro
+field_name: field_age_intro
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

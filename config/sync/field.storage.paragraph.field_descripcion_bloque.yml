@@ -1,0 +1,19 @@
+uuid: 74a299a6-623b-4118-ad37-0db62a9a9b3c
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_descripcion_bloque
+field_name: field_descripcion_bloque
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

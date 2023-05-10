@@ -1,0 +1,23 @@
+uuid: 6eac7d1b-5801-4629-b1c5-1fc8e736ab3e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.contenido_informativo_moco_de_go
+  module:
+    - text
+id: node.contenido_informativo_moco_de_go.body
+field_name: body
+entity_type: node
+bundle: contenido_informativo_moco_de_go
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

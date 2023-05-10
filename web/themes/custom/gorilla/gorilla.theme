@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ *  Functions to support theming.
+ */
+require_once dirname(__FILE__) . '/includes/settings.inc';
+require_once dirname(__FILE__) . '/includes/paragraphs.inc';

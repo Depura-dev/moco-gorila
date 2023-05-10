@@ -1,0 +1,66 @@
+uuid: fee10c09-0889-4e55-96f4-feaf2de043bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.main_slider_item.field_color_identity
+    - field.field.paragraph.main_slider_item.field_ms_image
+    - field.field.paragraph.main_slider_item.field_ms_link
+    - field.field.paragraph.main_slider_item.field_ms_text
+    - field.field.paragraph.main_slider_item.field_ms_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.main_slider_item
+  module:
+    - image
+    - link
+id: paragraph.main_slider_item.default
+targetEntityType: paragraph
+bundle: main_slider_item
+mode: default
+content:
+  field_color_identity:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ms_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_ms_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_ms_text:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_ms_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

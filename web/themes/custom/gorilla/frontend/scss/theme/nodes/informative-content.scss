@@ -1,0 +1,35 @@
+.informative-content {
+  margin-bottom: space(2);
+  &__header {
+    padding: space(2) 0 space(1);
+  }
+
+  &__title {
+    @extend %h2;
+  }
+
+  &__content {
+    h2 {
+      @extend %body-featured;
+      box-shadow: none;
+      background-color: transparent;
+      display: block;
+      padding: space(0.5) 0;
+    }
+
+    p,
+    strong,
+    li,
+    ol {
+      color: $white;
+    }
+
+    ol {
+      padding: 0 space(0.75);
+
+      li {
+        padding-bottom: space(0.5);
+      }
+    }
+  }
+}

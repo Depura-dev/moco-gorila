@@ -1,0 +1,20 @@
+uuid: 3f77d39e-075c-49f4-81e3-1d04cf81b2cc
+langcode: es
+status: true
+dependencies:
+  theme:
+    - gorilla
+_core:
+  default_config_hash: MBqG1B5mr5-fPSCDyTR6z2zVTRxZ10XeS_pAw6C7za4
+id: gorilla_local_actions
+theme: gorilla
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

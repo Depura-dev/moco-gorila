@@ -1,0 +1,19 @@
+uuid: 17b0880c-4b46-4c9b-a332-74e01a4c5ca6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_banner_ig_red_socia
+    - paragraphs.paragraphs_type.banner_images_ig_red_social
+id: paragraph.banner_images_ig_red_social.field_titulo_banner_ig_red_socia
+field_name: field_titulo_banner_ig_red_socia
+entity_type: paragraph
+bundle: banner_images_ig_red_social
+label: 'Titulo Banner ig red social'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

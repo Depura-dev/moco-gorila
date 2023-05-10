@@ -1,0 +1,50 @@
+uuid: 340f21d0-72f8-4926-86e3-94a6364e7aa5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_productos_destacados
+    - node.type.homepage
+  module:
+    - entity_reference_revisions
+id: node.homepage.field_productos_destacados
+field_name: field_productos_destacados
+entity_type: node
+bundle: homepage
+label: 'Productos Destacados'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: {  }
+    negate: 0
+    target_bundles_drag_drop:
+      age_gate:
+        weight: 9
+        enabled: false
+      full_text:
+        weight: 10
+        enabled: false
+      image_banner:
+        weight: 11
+        enabled: false
+      main_banner:
+        weight: 12
+        enabled: false
+      main_slider:
+        weight: 13
+        enabled: false
+      main_slider_item:
+        weight: 14
+        enabled: false
+      productos_destacados:
+        weight: 15
+        enabled: true
+      youtube_video:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

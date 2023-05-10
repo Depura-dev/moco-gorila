@@ -1,0 +1,33 @@
+uuid: 21c1d202-7039-46d0-9719-d81f50676a96
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_color_identity
+field_name: field_color_identity
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: purples
+      label: Purples
+    -
+      value: yellow-violet
+      label: 'Yellow Violet'
+    -
+      value: orange-violet
+      label: 'Orange Violet'
+    -
+      value: blue-violet
+      label: 'Blue Violet'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

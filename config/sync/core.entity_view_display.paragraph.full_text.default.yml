@@ -1,0 +1,32 @@
+uuid: 4bdd5f48-b231-45e1-9dab-60e2969d9f8b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.full_text.field_color_identity
+    - field.field.paragraph.full_text.field_rich_text
+    - paragraphs.paragraphs_type.full_text
+  module:
+    - options
+    - text
+id: paragraph.full_text.default
+targetEntityType: paragraph
+bundle: full_text
+mode: default
+content:
+  field_color_identity:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_rich_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

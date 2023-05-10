@@ -1,0 +1,19 @@
+uuid: 08868f2e-8937-40c2-a68b-4f427d74b136
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_msh_text_slider_title
+    - paragraphs.paragraphs_type.main_slider_item_home
+id: paragraph.main_slider_item_home.field_msh_text_slider_title
+field_name: field_msh_text_slider_title
+entity_type: paragraph
+bundle: main_slider_item_home
+label: 'Titulo Main Slider Home'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

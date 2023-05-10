@@ -1,0 +1,22 @@
+uuid: 0bcd663d-e27a-4b3c-9207-d7d6a9e67343
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.youtube_video.field_youtube_id
+    - paragraphs.paragraphs_type.youtube_video
+id: paragraph.youtube_video.default
+targetEntityType: paragraph
+bundle: youtube_video
+mode: default
+content:
+  field_youtube_id:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

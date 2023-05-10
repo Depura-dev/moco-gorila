@@ -1,0 +1,10 @@
+uuid: b7612c07-fdcc-4dbe-8ded-9a6a197866dd
+langcode: es
+status: true
+dependencies: {  }
+id: main_slider_home
+label: 'Main Slider Home'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,58 @@
+.webform-submission-moco-quiz-form {
+  max-width:  rem(1920px);
+  margin: 0 auto;
+  padding: 0 space(.7);
+
+  @include from(l){
+    padding: 0 10%;
+  }
+
+  &--submit {
+    @extend %button-primary;
+    margin-top: space(.75);
+  }
+
+  .form-wrapper {
+    padding: 0;
+
+    .fieldgroup {
+      background-color: transparent;
+      border: none;
+    }
+
+    .fieldset-wrapper {
+      background-color: transparent;
+    }
+
+    fieldset.form-item > legend:first-child {
+      @extend %title;
+      background-color: transparent;
+      border: none;
+      color: $white;
+      float: initial;
+      font-size: rem(24px);
+      text-align: left;
+
+      span {
+        &::after{
+          display: none;
+        }
+      }
+
+      @include from(l){
+        font-size: rem(50px);
+      }
+    }
+  }
+
+  .form-actions{
+    display: flex;
+    justify-content: center;
+    margin: space(1.5) 0 space(2.5);
+
+    @include from(l){
+      gap: space(1);
+      margin: space(.75) 0 space(2);
+    }
+  }
+}

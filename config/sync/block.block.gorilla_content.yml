@@ -1,0 +1,22 @@
+uuid: 49231b1e-083e-4811-9097-6cc662940aa9
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gorilla
+_core:
+  default_config_hash: 1o0W13wt232YmsDYiRA5xtlFq0L2WNS7FmIVbBeuhIY
+id: gorilla_content
+theme: gorilla
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

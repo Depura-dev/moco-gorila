@@ -1,0 +1,16 @@
+uuid: bd0f0ad4-33fa-4136-bbab-35f9d7f62835
+langcode: es
+status: false
+dependencies: {  }
+id: develop
+label: Develop
+description: 'Configuración para el sitio web de desarrollo.'
+weight: 0
+folder: ../config/develop
+module: {  }
+theme: {  }
+blacklist:
+  - stage_file_proxy.settings
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

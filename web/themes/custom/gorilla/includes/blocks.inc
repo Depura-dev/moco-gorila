@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Preprocess and suggestions for a Drupal sub-theme.
+ */
+
+use Drupal\block\Entity\Block;
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ *
+ * Add custom block theme suggestion based on block type and display.
+ */
+function gorilla_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  // View mode suggestion for custom blocks.
+  if (isset($variables['elements']['#configuration']['view_mode'])) {
+    $view_mode = $variables['elements']['#configuration']['view_mode'];
+    $suggestions[] = 'block__' . $view_mode;
+  }
+  else {
+    $view_mode = NULL;
+  }
+
+  // Region suggestion for blocks in Drupal.
+  if (isset($variables['elements']['#id'])) {
+    if ($block = Block::load($variables["elements"]["#id"])) {
+      $region = $block->getRegion();
+      $suggestions[] = 'block__' . $region;
+      $suggestions[] = 'block__' . $region . '__' . $variables['elements']['#base_plugin_id'];
+      $suggestions[] = 'block__' . $region . '__' . $variables['elements']['#id'];
+      $suggestions[] = 'block__' . $region . '__' . $variables['elements']['#base_plugin_id'] . '__' . $variables['elements']['#id'];
+    }
+  }
+
+  // Custom Blocks (Bundles and view mode).
+  if ($variables['elements']['#base_plugin_id'] === 'block_content'
+    && isset($variables['elements']['content']['#block_content'])) {
+    // Bundle type.
+    $bundle = $variables['elements']['content']['#block_content']->bundle();
+    $suggestions[] = 'block__' . $region . '__' . $bundle;
+    if ($view_mode = $variables['elements']['content']['#view_mode']) {
+      $suggestions[] = 'block__' . $region . '__' . $bundle . '__' . $view_mode;
+      $suggestions[] = 'block__' . $bundle . '__' . $view_mode;
+    }
+    $suggestions[] = 'block__' . $bundle;
+  }
+}

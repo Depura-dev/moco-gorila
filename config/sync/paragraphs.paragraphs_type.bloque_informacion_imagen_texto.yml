@@ -1,0 +1,10 @@
+uuid: 666f771c-3ce7-4198-8505-345efd9fa2cd
+langcode: es
+status: true
+dependencies: {  }
+id: bloque_informacion_imagen_texto
+label: 'Bloque Información imagen texto'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

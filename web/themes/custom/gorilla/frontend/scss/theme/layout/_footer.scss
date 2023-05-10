@@ -1,0 +1,191 @@
+.main-footer {
+  background-color: $purple;
+  padding: 0 0 space(.5);
+  position: relative;
+
+  @include from(l){
+    padding: space(1) 0 space(.5);
+  }
+
+  h5 {
+    display: none;
+  }
+
+  p,
+  h2,
+  div,
+  a {
+    @extend %body;
+    color: $white;
+    line-height: 1.7;
+  }
+
+  &__left {
+    padding: space(1.25) 0 space(1);
+
+    @include from(l){
+      padding: 0;
+      padding-bottom: space(1);
+    }
+
+    .navbar-brand {
+      flex-direction: column;
+      margin: 0;
+
+      img {
+        margin: 0;
+        min-height: rem(95px);
+        min-width: rem(155px);
+
+        @include from(l){
+          margin-bottom: space(.5);
+          max-width: 100%;
+          min-height: rem(169px);
+        }
+      }
+    }
+  }
+
+  &__right {
+    &-legal {
+      justify-content: center;
+
+      @include from(l){
+        justify-content: flex-end;
+      }
+
+      a {
+        @extend %paragraph;
+        font-weight: bolder;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:hover{
+          color: $blue-lt;
+        }
+      }
+
+      @include from(l) {
+        order: 1;
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    &-social {
+      padding-top: space(1);
+      justify-content: center;
+
+      @include from(l) {
+        align-items: center;
+        justify-content: flex-end;
+        min-height: rem(150px);
+        order: 0;
+        padding: 0;
+      }
+
+      ul {
+        flex-direction: row;
+        gap: space(0.75);
+        justify-content: center;
+
+        @include from(l) {
+          justify-content: right;
+        }
+      }
+
+      a {
+        $size-logo-s: rem(40px);
+        $size-logo-l: rem(60px);
+
+        &[title="facebook"] {
+          @include imageBg(
+            "../img/social-media/facebook.svg",
+            $size-logo-s,
+            $size-logo-s
+          );
+
+          @include from(l) {
+            height: $size-logo-l;
+            width: $size-logo-l;
+          }
+        }
+
+        &[title="instagram"] {
+          @include imageBg(
+            "../img/social-media/instagram.svg",
+            $size-logo-s,
+            $size-logo-s
+          );
+
+          @include from(l) {
+            height: $size-logo-l;
+            width: $size-logo-l;
+          }
+        }
+
+        &[title="tiktok"] {
+          @include imageBg(
+            "../img/social-media/tiktok.svg",
+            $size-logo-s,
+            $size-logo-s
+          );
+
+          @include from(l) {
+            height: $size-logo-l;
+            width: $size-logo-l;
+          }
+        }
+      }
+    }
+
+    &-copyright {
+      display: block;
+
+      @include from(l) {
+        display: none;
+      }
+
+      .navbar-brand {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: space(0.75) 0 space(1);
+
+        .site-slogan {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__decorated {
+    bottom: 0;
+    display: flex;
+    left: 0;
+    position: absolute;
+    right: 0;
+
+    span {
+      min-height: rem(17px);
+      width: 25%;
+    }
+
+    &-yellow {
+      background-color: $yellow;
+    }
+    &-blue {
+      background-color: $blue;
+    }
+    &-green {
+      background-color: $green;
+    }
+    &-red {
+      background-color: $red;
+    }
+  }
+}

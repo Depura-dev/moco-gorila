@@ -1,0 +1,26 @@
+.carousel-arrows {
+  @include center('vertical');
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  width: 100%;
+  padding: 0 2%;
+
+  &__arrow {
+    color: $white;
+    cursor: pointer;
+    font-style: normal;
+    font-size: rem(50px);
+    line-height: 1;
+    pointer-events: all;
+  }
+
+  &__arrow-left {
+    @include imageBg('../img/icons/arrow_left.svg', rem(30px), rem(200px));
+  }
+
+  &__arrow-right {
+    @include imageBg('../img/icons/arrow_right.svg', rem(30px), rem(200px));
+  }
+
+}

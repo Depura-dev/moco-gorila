@@ -1,0 +1,23 @@
+uuid: ab2b2caa-f671-4f78-a404-70d8f69dd138
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color_identity
+    - paragraphs.paragraphs_type.image_banner
+  module:
+    - options
+id: paragraph.image_banner.field_color_identity
+field_name: field_color_identity
+entity_type: paragraph
+bundle: image_banner
+label: 'Color Identity'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: purples
+default_value_callback: ''
+settings: {  }
+field_type: list_string

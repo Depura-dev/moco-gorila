@@ -1,0 +1,41 @@
+@mixin quiz-card-multiple($id, $source) {
+  #{$id} {
+    padding: 0;
+
+    .fieldset-wrapper {
+      padding: space(1) 0 5%;
+
+      @include from(l) {
+        padding: space(1.5) 4% 1%;
+      }
+
+      @include from(xl) {
+        padding: space(1.5) 0 0;
+      }
+
+      & > div {
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+        grid-gap: space(1) space(0.5);
+
+        justify-content: center;
+
+        @include from(l) {
+          grid-template-columns: repeat(4, minmax(1fr, 0));
+          gap: space(0.75);
+        }
+
+        & > div {
+          @extend %radio-multiple;
+          grid-column: span 1;
+          margin: 0 0 1%;
+          padding: 8% 8% 0;
+          position: relative;
+
+          @extend %cursor-pointer;
+        }
+      }
+    }
+  }
+}

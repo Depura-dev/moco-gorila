@@ -1,0 +1,53 @@
+uuid: d4a6a5d7-8e76-4e02-af9c-052d0f252dce
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner_images_ig_red_social.field_imagen_banner_red_social_i
+    - field.field.paragraph.banner_images_ig_red_social.field_texto_de_red_social
+    - field.field.paragraph.banner_images_ig_red_social.field_titulo_banner_ig_red_socia
+    - field.field.paragraph.banner_images_ig_red_social.field_url_ig_red_social
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.banner_images_ig_red_social
+  module:
+    - image
+id: paragraph.banner_images_ig_red_social.default
+targetEntityType: paragraph
+bundle: banner_images_ig_red_social
+mode: default
+content:
+  field_imagen_banner_red_social_i:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_texto_de_red_social:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_titulo_banner_ig_red_socia:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_url_ig_red_social:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

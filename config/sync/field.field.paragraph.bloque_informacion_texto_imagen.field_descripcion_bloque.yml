@@ -1,0 +1,19 @@
+uuid: c7113129-795c-4061-929b-9c6d35a6b9e8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_descripcion_bloque
+    - paragraphs.paragraphs_type.bloque_informacion_texto_imagen
+id: paragraph.bloque_informacion_texto_imagen.field_descripcion_bloque
+field_name: field_descripcion_bloque
+entity_type: paragraph
+bundle: bloque_informacion_texto_imagen
+label: 'Descripción Bloque'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

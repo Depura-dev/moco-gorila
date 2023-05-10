@@ -1,0 +1,21 @@
+uuid: ffc8549f-cd4f-4167-9924-cc6621278d62
+langcode: es
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_bloque_imagen_descripcion
+field_name: field_bloque_imagen_descripcion
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

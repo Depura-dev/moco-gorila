@@ -1,0 +1,6 @@
+html[lang="en"] {
+  @include english-image-modifier('moco-quiz', 3);
+  @include english-image-modifier('moco-quiz', 5, 4);
+  @include english-image-modifier('moco-quiz', 6, 3);
+  @include english-image-modifier('moco-quiz', 12);
+}

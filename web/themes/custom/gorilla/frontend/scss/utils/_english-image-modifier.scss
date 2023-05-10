@@ -1,0 +1,40 @@
+@mixin english-image-modifier($source, $n-id, $n-image:"all-four") {
+  $id: '#edit-#{$n-id}';
+  $source: '#{$source}/edit-#{$n-id}';
+  #{$id}{
+    .fieldset-wrapper {
+      & > div {
+        & > div {
+          @if ($n-image == "all-four" or $n-image == "all-eight") {
+            @for $i from 1 through 4 {
+              &:nth-child(#{$i}) {
+                &::before {
+                  $path: '../img/#{$source}/eng/imagen#{$i}.svg';
+                  background-image: url(#{$path});
+                }
+              }
+            }
+            @if ($n-image == "all-eight") {
+              @for $i from 5 through 8 {
+                &:nth-child(#{$i}) {
+                  &::before {
+                    $path: '../img/#{$source}/eng/imagen#{$i}.svg';
+                    background-image: url(#{$path});
+                  }
+                }
+              }
+            }
+          } @else {
+            &:nth-child(#{$n-image}) {
+              &::before {
+                $path: "../img/#{$source}/eng/imagen#{$n-image}.svg";
+                background-image: url($path);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

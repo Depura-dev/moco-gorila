@@ -1,0 +1,25 @@
+uuid: 4cd29823-847a-421c-a45a-923b49a65b16
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.main_slider.field_ms_items
+    - paragraphs.paragraphs_type.main_slider
+  module:
+    - entity_reference_revisions
+id: paragraph.main_slider.default
+targetEntityType: paragraph
+bundle: main_slider
+mode: default
+content:
+  field_ms_items:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

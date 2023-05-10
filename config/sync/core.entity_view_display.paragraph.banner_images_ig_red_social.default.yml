@@ -1,0 +1,54 @@
+uuid: bcfdafce-a1ad-4c79-a765-f96dcd08ec95
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner_images_ig_red_social.field_imagen_banner_red_social_i
+    - field.field.paragraph.banner_images_ig_red_social.field_texto_de_red_social
+    - field.field.paragraph.banner_images_ig_red_social.field_titulo_banner_ig_red_socia
+    - field.field.paragraph.banner_images_ig_red_social.field_url_ig_red_social
+    - paragraphs.paragraphs_type.banner_images_ig_red_social
+  module:
+    - image
+id: paragraph.banner_images_ig_red_social.default
+targetEntityType: paragraph
+bundle: banner_images_ig_red_social
+mode: default
+content:
+  field_imagen_banner_red_social_i:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_texto_de_red_social:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_titulo_banner_ig_red_socia:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_url_ig_red_social:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  search_api_excerpt: true

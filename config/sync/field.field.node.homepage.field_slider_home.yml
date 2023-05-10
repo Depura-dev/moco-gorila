@@ -1,0 +1,49 @@
+uuid: 960495e8-3b46-4cbf-b060-9b2758b6c11d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slider_home
+    - node.type.homepage
+    - paragraphs.paragraphs_type.main_slider
+  module:
+    - entity_reference_revisions
+id: node.homepage.field_slider_home
+field_name: field_slider_home
+entity_type: node
+bundle: homepage
+label: 'slider home'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      main_slider: main_slider
+    negate: 0
+    target_bundles_drag_drop:
+      age_gate:
+        weight: 8
+        enabled: false
+      full_text:
+        weight: 9
+        enabled: false
+      image_banner:
+        weight: 10
+        enabled: false
+      main_banner:
+        weight: 11
+        enabled: false
+      main_slider:
+        weight: 12
+        enabled: true
+      main_slider_item:
+        weight: 13
+        enabled: false
+      youtube_video:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

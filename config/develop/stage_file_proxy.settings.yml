@@ -1,0 +1,7 @@
+langcode: es
+hotlink: false
+origin: 'https://moco.depura-creatividad.com/docroot/web'
+origin_dir: sites/default/files
+use_imagecache_root: false
+verify: false
+excluded_extensions: ''

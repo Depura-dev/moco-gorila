@@ -1,0 +1,61 @@
+@mixin quiz-card-single($id, $source) {
+  #{$id}{
+    .fieldset-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: space(.25);
+      justify-content: flex-end;
+      padding: 0;
+      position: relative;
+
+      @include from(l){
+        flex-direction: row;
+        height: 50vw;
+        max-height: rem(650px);
+      }
+
+      &::before {
+        @include imageBg('../img/#{$source}/imagen1.svg', 60vw, 100%);
+        content: '';
+        display: block;
+
+        @include from(l){
+          @include imageBg('../img/#{$source}/imagen1.svg', 42vw, 57%);
+          left: 0;
+          max-height: rem(650px);
+          position: absolute;
+          top: 0;
+        }
+      }
+
+      & > div {
+        @extend %cursor-pointer;
+        margin: 0;
+        width: 100%;
+
+        @include from(l){
+          @include center('vertical');
+          width: 45%;
+        }
+
+        & > div {
+          @extend %radio-single;
+          @extend %cursor-pointer;
+          background-color: $white;
+          line-height: 1.1;
+          margin: space(.5) 0;
+          padding: space(.5) 0;
+          padding-right: space(1);
+          position: relative;
+
+          @include from(l){
+            margin: space(.5) 0;
+            padding: space(.75) 0;
+            padding-right: space(1);
+          }
+        }
+      }
+    }
+  }
+}
+

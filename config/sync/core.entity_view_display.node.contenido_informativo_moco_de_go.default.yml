@@ -1,0 +1,30 @@
+uuid: 74ef0ddd-c5fe-4533-862b-dbd9b844cd6e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.contenido_informativo_moco_de_go.body
+    - node.type.contenido_informativo_moco_de_go
+  module:
+    - text
+    - user
+id: node.contenido_informativo_moco_de_go.default
+targetEntityType: node
+bundle: contenido_informativo_moco_de_go
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,19 @@
+uuid: 83b15eaa-376f-4049-81b1-7b22334c5169
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_de_bloque_destacado
+    - paragraphs.paragraphs_type.productos_destacados_bloque
+id: paragraph.productos_destacados_bloque.field_titulo_de_bloque_destacado
+field_name: field_titulo_de_bloque_destacado
+entity_type: paragraph
+bundle: productos_destacados_bloque
+label: 'Titulo de Bloque destacado'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

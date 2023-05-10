@@ -1,0 +1,29 @@
+title: 'income by age'
+elements: |
+  age_heading:
+    '#markup': "<pre data-placeholder=\"Traducción\" dir=\"ltr\" id=\"tw-target-text\">\r\nAttention!</pre>"
+  age_day:
+    '#title': Day
+    '#required_error': 'enter the day'
+  age_month:
+    '#title': Month
+    '#options':
+      1: January
+      2: February
+      3: March
+      4: April
+      5: May
+      6: June
+      7: July
+      8: August
+      9: September
+      10: October
+      11: November
+      12: December
+    '#required_error': 'choose the month'
+  age_ano:
+    '#title': Year
+  _declaro_haber_leido_la_autorizacion_de_a_href_tratamiento_de_da:
+    '#title': 'I agree <a href="en/terminos-de-uso">terms and conditions </a>*'
+  actions:
+    '#submit__label': Start

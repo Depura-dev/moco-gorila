@@ -1,0 +1,54 @@
+uuid: 78fb5bfd-9aa2-4edd-9c00-73cc0fd87ae6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.product.body
+    - field.field.node.product.field_product_features
+    - field.field.node.product.field_product_image
+    - field.field.node.product.field_product_line
+    - field.field.node.product.field_product_presentations
+    - field.field.node.product.field_product_thumbnail
+    - field.field.node.product.field_product_type
+    - node.type.product
+  module:
+    - image
+    - user
+id: node.product.teaser
+targetEntityType: node
+bundle: product
+mode: teaser
+content:
+  field_product_line:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_product_thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_product_features: true
+  field_product_image: true
+  field_product_presentations: true
+  field_product_type: true
+  langcode: true
+  search_api_excerpt: true

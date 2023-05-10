@@ -1,0 +1,30 @@
+uuid: 8a6f75cc-9103-41da-9202-8b5c8442bc3c
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.legal
+  module:
+    - mobile_detect
+    - system
+  theme:
+    - gorilla
+id: legal
+theme: gorilla
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:legal'
+settings:
+  id: 'system_menu_block:legal'
+  label: Legal
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  mobile_detect_device_type:
+    id: mobile_detect_device_type
+    negate: null
+    devices: {  }

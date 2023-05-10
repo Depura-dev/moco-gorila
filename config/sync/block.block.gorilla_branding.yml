@@ -1,0 +1,30 @@
+uuid: af73b167-cafe-455a-9b41-72c64cf25c62
+langcode: es
+status: true
+dependencies:
+  module:
+    - mobile_detect
+    - system
+  theme:
+    - gorilla
+_core:
+  default_config_hash: nuW1Z5MdvzbCCEZ9RQojaEWB6Zni32zTq-v5OWbS2sc
+id: gorilla_branding
+theme: gorilla
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility:
+  mobile_detect_device_type:
+    id: mobile_detect_device_type
+    negate: null
+    devices: {  }

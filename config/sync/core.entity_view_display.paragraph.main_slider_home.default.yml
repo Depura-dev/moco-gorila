@@ -1,0 +1,25 @@
+uuid: b4bb5e48-b3bd-4f0f-a374-ed38858c62ae
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.main_slider_home.field_main_slider_home_item
+    - paragraphs.paragraphs_type.main_slider_home
+  module:
+    - entity_reference_revisions
+id: paragraph.main_slider_home.default
+targetEntityType: paragraph
+bundle: main_slider_home
+mode: default
+content:
+  field_main_slider_home_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

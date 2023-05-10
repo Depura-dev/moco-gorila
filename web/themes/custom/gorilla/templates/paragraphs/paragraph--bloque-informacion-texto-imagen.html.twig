@@ -1,0 +1,45 @@
+{%
+set classes = [
+
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+not paragraph.isPublished() ? 'paragraph--unpublished',
+'image-description-paragraph'
+]
+%}
+
+{% block paragraph %}
+<section class="informacion-texto-imagen p-0" {{ attributes.addClass(classes) }}>
+  {% set imagen_bloque = content.field_imagen_bloque[0] %}
+  {% set titulo_bloque = content.field_titulo_bloque[0] %}
+  {% set description_bloque = content.field_descripcion_bloque[0] %}
+  {% set texto_link_bloque = content.field_texto_boton_link[0] %}
+  {% set link_bloque = content.field_link_boton_bloque[0] %}
+  <div class="row g-0 informacion-texto-imagen--moco-quiz">
+    <div class="col-md-6 informacion-texto-imagen--moco-quiz-container-image">
+      <div class="informacion-texto-imagen--moco-quiz-container-image__image">
+        {# Imagen #}
+        {{ imagen_bloque }}
+      </div>
+    </div>
+    <div class="col-md-6 informacion-texto-imagen--moco-quiz-text">
+      <header class="informacion-texto-imagen--moco-quiz-text__title">
+        <h2>{{ titulo_bloque}}</h2>
+      </header>
+      <div class="informacion-texto-imagen--moco-quiz-text-items">
+        <p class="informacion-texto-imagen--moco-quiz-text-items__content-description">
+          {{ description_bloque }}
+        </p>
+        <div class="informacion-texto-imagen--moco-quiz-text-items__link-bloque">
+          <a href="{{link_bloque}}" class="btn-primary">
+            {{ texto_link_bloque }}
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+  <div>
+</section>
+{% endblock paragraph %}

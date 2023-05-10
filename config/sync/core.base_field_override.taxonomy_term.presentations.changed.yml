@@ -1,0 +1,18 @@
+uuid: 88bc61c9-2d1f-4ed7-abd2-ab1d14460408
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.presentations
+id: taxonomy_term.presentations.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: presentations
+label: Modificado
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,23 @@
+uuid: 933c854d-8ae8-471a-80a3-9478d70a9b37
+langcode: es
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - gorilla
+_core:
+  default_config_hash: HZJ8894mYbX0pdeltUdfnQjONb-BnkflWDqEm_x13m4
+id: gorilla_search_form
+theme: gorilla
+region: nav_additional
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

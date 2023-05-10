@@ -1,0 +1,19 @@
+uuid: b0b5627a-ec06-46b0-9ec3-0e4754a51b13
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_age_intro
+    - paragraphs.paragraphs_type.age_gate
+id: paragraph.age_gate.field_age_intro
+field_name: field_age_intro
+entity_type: paragraph
+bundle: age_gate
+label: 'Intro Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

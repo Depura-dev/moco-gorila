@@ -1,0 +1,38 @@
+body {
+  %button-primary, .btn-primary {
+    @extend %button-text;
+    background: $white;
+    border: rem(2px) solid $purple;
+    border-radius: rem(35px);
+    box-shadow: 6px 6px 0 0px $purple;
+    color: $purple;
+    display: inline-block;
+    padding: rem(7px) rem(25px) rem(9px);
+    transition: all .32s ease-in-out;
+
+    &:hover {
+      @extend %cursor-pointer;
+      background: $yellow;
+      color: $purple;
+    }
+
+    @include from(l) {
+      box-shadow: 9px 9px 0 0px $purple;
+      padding: rem(10px) rem(50px) rem(12px);
+    }
+  }
+
+  %button-secondary {
+    @extend %button-primary;
+
+    background: transparent;
+    border: rem(2px) solid $white;
+    color: $white;
+
+    &:hover {
+      background: $white;
+      border-color: $black;
+      color: $black;
+    }
+  }
+}

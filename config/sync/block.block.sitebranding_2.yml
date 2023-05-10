@@ -1,0 +1,28 @@
+uuid: 1944d70c-ed67-4978-b36a-b6d1ac546b7d
+langcode: es
+status: true
+dependencies:
+  module:
+    - mobile_detect
+    - system
+  theme:
+    - gorilla
+id: sitebranding_2
+theme: gorilla
+region: footer_left
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: true
+visibility:
+  mobile_detect_device_type:
+    id: mobile_detect_device_type
+    negate: null
+    devices: {  }

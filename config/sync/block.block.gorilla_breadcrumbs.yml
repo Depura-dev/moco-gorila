@@ -1,0 +1,22 @@
+uuid: a8523d21-5dfe-4ec4-9df5-a2e2a09f23eb
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gorilla
+_core:
+  default_config_hash: VShtwe72J2j41BJzApoNbs8l554EpngM5RTObxM7yiw
+id: gorilla_breadcrumbs
+theme: gorilla
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

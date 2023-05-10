@@ -1,0 +1,10 @@
+uuid: 84504a03-27e8-4700-8977-fb558bf671da
+langcode: es
+status: true
+dependencies: {  }
+id: banner_images_ig_red_social
+label: 'Banner images ig red social'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

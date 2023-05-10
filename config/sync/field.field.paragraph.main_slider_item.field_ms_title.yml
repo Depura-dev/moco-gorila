@@ -1,0 +1,19 @@
+uuid: 43cb86e6-5877-4808-b142-c3f8d6920cab
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ms_title
+    - paragraphs.paragraphs_type.main_slider_item
+id: paragraph.main_slider_item.field_ms_title
+field_name: field_ms_title
+entity_type: paragraph
+bundle: main_slider_item
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

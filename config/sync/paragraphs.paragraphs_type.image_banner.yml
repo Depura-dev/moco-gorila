@@ -1,0 +1,10 @@
+uuid: d3896d55-9b40-48fc-9819-c0207ef5146e
+langcode: es
+status: true
+dependencies: {  }
+id: image_banner
+label: 'Image Banner'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

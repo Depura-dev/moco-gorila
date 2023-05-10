@@ -1,0 +1,62 @@
+uuid: 84185e75-6de8-4b15-8b6f-54b7ef1bbf90
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bloque_informacion_imagen_texto.field_descripcion_bloque
+    - field.field.paragraph.bloque_informacion_imagen_texto.field_imagen_bloque
+    - field.field.paragraph.bloque_informacion_imagen_texto.field_link_boton_bloque
+    - field.field.paragraph.bloque_informacion_imagen_texto.field_texto_boton_link
+    - field.field.paragraph.bloque_informacion_imagen_texto.field_titulo_bloque
+    - paragraphs.paragraphs_type.bloque_informacion_imagen_texto
+  module:
+    - image
+id: paragraph.bloque_informacion_imagen_texto.default
+targetEntityType: paragraph
+bundle: bloque_informacion_imagen_texto
+mode: default
+content:
+  field_descripcion_bloque:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_imagen_bloque:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link_boton_bloque:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_texto_boton_link:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_titulo_bloque:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

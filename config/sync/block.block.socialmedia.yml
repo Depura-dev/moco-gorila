@@ -1,0 +1,30 @@
+uuid: e245cb2c-5646-4dc9-a151-5c1664e0c973
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.social-media
+  module:
+    - mobile_detect
+    - system
+  theme:
+    - gorilla
+id: socialmedia
+theme: gorilla
+region: footer_right_social
+weight: -7
+provider: null
+plugin: 'system_menu_block:social-media'
+settings:
+  id: 'system_menu_block:social-media'
+  label: 'Social Media'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  mobile_detect_device_type:
+    id: mobile_detect_device_type
+    negate: null
+    devices: {  }

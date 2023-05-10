@@ -1,0 +1,20 @@
+uuid: 338e9be2-c373-4258-9b50-5c20abe675c5
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - webform
+id: paragraph.field_age_form
+field_name: field_age_form
+entity_type: paragraph
+type: webform
+settings:
+  target_type: webform
+module: webform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

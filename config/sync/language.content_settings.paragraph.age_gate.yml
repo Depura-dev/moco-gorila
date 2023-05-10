@@ -1,0 +1,18 @@
+uuid: bc82c85a-e873-4e9e-beb0-a7b3703fd739
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.age_gate
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.age_gate
+target_entity_type_id: paragraph
+target_bundle: age_gate
+default_langcode: site_default
+language_alterable: true

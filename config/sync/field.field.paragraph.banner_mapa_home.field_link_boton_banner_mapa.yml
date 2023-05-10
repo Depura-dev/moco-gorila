@@ -1,0 +1,19 @@
+uuid: ee9dcdd0-dcf4-4cef-93e1-45e03f4e7a76
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_boton_banner_mapa
+    - paragraphs.paragraphs_type.banner_mapa_home
+id: paragraph.banner_mapa_home.field_link_boton_banner_mapa
+field_name: field_link_boton_banner_mapa
+entity_type: paragraph
+bundle: banner_mapa_home
+label: 'Link boton banner mapa'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

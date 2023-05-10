@@ -1,0 +1,67 @@
+uuid: 21c3f15a-7fef-4074-b69e-b77c1150b911
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_slider_home
+    - node.type.homepage
+    - paragraphs.paragraphs_type.main_slider_home
+  module:
+    - entity_reference_revisions
+id: node.homepage.field_main_slider_home
+field_name: field_main_slider_home
+entity_type: node
+bundle: homepage
+label: 'Main Slider Home'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      main_slider_home: main_slider_home
+    negate: 0
+    target_bundles_drag_drop:
+      age_gate:
+        weight: 13
+        enabled: false
+      bloque_informacion_imagen_texto:
+        weight: 14
+        enabled: false
+      bloque_informacion_texto_imagen:
+        weight: 15
+        enabled: false
+      full_text:
+        weight: 16
+        enabled: false
+      image_banner:
+        weight: 17
+        enabled: false
+      main_banner:
+        weight: 18
+        enabled: false
+      main_slider:
+        weight: 19
+        enabled: false
+      main_slider_home:
+        weight: 21
+        enabled: true
+      main_slider_item:
+        weight: 20
+        enabled: false
+      main_slider_item_home:
+        weight: 21
+        enabled: false
+      producto_descatado_item:
+        weight: 23
+        enabled: false
+      productos_destacados_bloque:
+        weight: 22
+        enabled: false
+      youtube_video:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

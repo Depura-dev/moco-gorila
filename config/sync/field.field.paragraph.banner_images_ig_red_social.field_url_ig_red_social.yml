@@ -1,0 +1,19 @@
+uuid: 85667d6c-972d-4802-98e3-08481903f3e8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_url_ig_red_social
+    - paragraphs.paragraphs_type.banner_images_ig_red_social
+id: paragraph.banner_images_ig_red_social.field_url_ig_red_social
+field_name: field_url_ig_red_social
+entity_type: paragraph
+bundle: banner_images_ig_red_social
+label: 'Url ig Red Social'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

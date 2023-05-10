@@ -1,0 +1,12 @@
+title: 'Example: Webform Handler'
+description: 'An example of a custom Webform handler.'
+category: Example
+elements: |
+  value:
+    '#type': textfield
+    '#title': Value
+    '#required': true
+    '#description': 'Enter a value to displayed in a custom message.'
+handlers:
+  example:
+    label: Example

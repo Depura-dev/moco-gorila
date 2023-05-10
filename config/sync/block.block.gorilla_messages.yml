@@ -1,0 +1,22 @@
+uuid: 9672aa1c-cf10-4b42-be89-f95f3adbd134
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gorilla
+_core:
+  default_config_hash: 9LdMj38y4GDi23GrIUtIZIV1bJEn1C47N19jrswvcLc
+id: gorilla_messages
+theme: gorilla
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

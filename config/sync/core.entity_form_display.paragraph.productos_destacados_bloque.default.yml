@@ -1,0 +1,45 @@
+uuid: a876e625-0ccd-4dfd-9659-43c24095968f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.productos_destacados_bloque.field_producto_destacado
+    - field.field.paragraph.productos_destacados_bloque.field_titulo_de_bloque_destacado
+    - paragraphs.paragraphs_type.productos_destacados_bloque
+  module:
+    - paragraphs
+id: paragraph.productos_destacados_bloque.default
+targetEntityType: paragraph
+bundle: productos_destacados_bloque
+mode: default
+content:
+  field_producto_destacado:
+    type: paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: producto_descatado_item
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_titulo_de_bloque_destacado:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

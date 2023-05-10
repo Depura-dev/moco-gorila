@@ -1,0 +1,19 @@
+uuid: 17666d5f-f545-44c2-b073-de9ff856155a
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_msh_descripcion
+field_name: field_msh_descripcion
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

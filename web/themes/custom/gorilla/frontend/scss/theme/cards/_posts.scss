@@ -1,0 +1,20 @@
+$zindex-icon: 10;
+
+.card-news {
+
+  &__image {
+    @include fluid-aspect(374 203, 'img');
+  }
+
+  &__content {
+  }
+
+  &__media {
+  }
+
+  &__title {
+  }
+
+  &__cta {
+  }
+}

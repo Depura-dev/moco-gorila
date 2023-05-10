@@ -1,0 +1,96 @@
+#block-dropdownlanguage {
+  --content-pseudo: "";
+  position: fixed;
+  right: space(1);
+  top: 9px;
+  background-color: transparent !important;
+  min-height: 50px;
+
+  &::after {
+    color: transparent;
+    content: "";
+    display: inline-block;
+    height: rem(50px);
+    position: absolute;
+    top: 0;
+    right: rem(50px);
+    width: rem(33px);
+    pointer-events: painted;
+  }
+
+  .dropbutton-widget {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    min-height: 50px;
+    position: relative;
+
+    ul {
+      border: none;
+      min-height: 50px;
+      display: flex;
+      flex-direction: column !important;
+    }
+
+    li {
+      height: 50px;
+    }
+
+  }
+
+  .dropbutton-toggle {
+    color: transparent;
+    max-width: 0;
+  }
+
+  .active-language {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    color: transparent;
+    background-color: transparent;
+    min-height: 50px !important;
+    transform: none;
+    margin: 0;
+
+    &::before {
+      align-items: center;
+      background-color: $yellow;
+      border: 3px solid $purple;
+      color: $purple;
+      border-radius: 50%;
+      display: flex;
+      content: var(--content-pseudo);
+      font-size: 20px;
+      font-weight: 500;
+      height: 50px;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      justify-content: center;
+      top: 0;
+      width: 50px;
+      @extend %cursor-pointer;
+    }
+  }
+
+  .secondary-action {
+    background-color: $yellow;
+    border: 3px solid $purple !important;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: $purple;
+      font-size: 17px;
+      font-weight: 600;
+      margin: 0 !important;
+    }
+  }
+}

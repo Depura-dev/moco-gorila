@@ -1,0 +1,35 @@
+uuid: b9e02031-ecd3-4781-8e2d-25de0fc7e316
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.producto_descatado_item.field_imagen_de_producto_destaca
+    - field.field.paragraph.producto_descatado_item.field_titulo_de_producto_destaca
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.producto_descatado_item
+  module:
+    - image
+id: paragraph.producto_descatado_item.default
+targetEntityType: paragraph
+bundle: producto_descatado_item
+mode: default
+content:
+  field_imagen_de_producto_destaca:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_titulo_de_producto_destaca:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

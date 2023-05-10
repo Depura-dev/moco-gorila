@@ -1,0 +1,19 @@
+uuid: f7a443db-ce54-4f2f-95c0-5bb931be4d2c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_boton_bloque
+    - paragraphs.paragraphs_type.bloque_informacion_imagen_texto
+id: paragraph.bloque_informacion_imagen_texto.field_link_boton_bloque
+field_name: field_link_boton_bloque
+entity_type: paragraph
+bundle: bloque_informacion_imagen_texto
+label: 'link boton bloque'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 195c69b8-9dea-46b2-88e0-f19dd61fc110
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_msh_descripcion
+    - paragraphs.paragraphs_type.main_slider_item_home
+  module:
+    - text
+id: paragraph.main_slider_item_home.field_msh_descripcion
+field_name: field_msh_descripcion
+entity_type: paragraph
+bundle: main_slider_item_home
+label: 'Descripción Main Slider Home'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

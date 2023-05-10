@@ -1,0 +1,114 @@
+%radio{
+  label{
+    @extend %cursor-pointer;
+  }
+
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+
+    & + label {
+      display: flex;
+    }
+
+    & + label:before {
+      background: #fff;
+      border: 4px solid $purple;
+      border-radius: 100%;
+      content: "";
+      display: block;
+      height: 25px;
+      margin: 0 rem(15px);
+      min-width: 25px;
+      position: relative;
+
+      @include from(l) {
+        height: 30px;
+        margin: 0 rem(20px);
+        min-width: 30px;
+      }
+    }
+
+    &:checked + label:after {
+      @include center('vertical');
+      border: none;
+      content: "";
+      display: block;
+    }
+  }
+}
+
+%radio-single {
+  @extend %radio;
+
+  input[type="radio"] {
+    & + label {
+      align-items: center;
+
+      @include from(l){
+        min-height: rem(45px);
+      }
+    }
+
+    &:checked + label:after {
+      @include center('vertical');
+      background-color: rgba($purple, .7);
+      border-radius: 100%;
+      height: 11px;
+      margin-left: rem(22px);
+      width: 11px;
+
+      @include from(l){
+        height: 15px;
+        margin-left: rem(27.5px);
+        width: 15px;
+      }
+    }
+  }
+}
+
+%radio-multiple {
+  @extend %radio;
+  input[type="radio"] {
+    & + label {
+      justify-content: center;
+      min-height: rem(65px);
+      padding: space(.5) 0;
+      text-align: center;
+
+      @include from(l){
+        min-height: rem(120px);
+      }
+
+      @include from(xl){
+        font-size: rem(32px);
+      }
+    }
+
+    & + label:before {
+      display: none;
+    }
+
+    &:checked + label:after {
+      @include center('vertical');
+      background-color: transparent;
+      border: 5px solid $purple;
+      border-radius: 0;
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      height: calc(100% + 10px);
+      width: calc(100% + 10px);
+      margin: 0;
+      transform: translateY(0);
+      box-shadow: 0 0 5px 5px $purple;
+
+      @include from(l){
+        box-shadow: 0 0 10px 8px $purple;
+      }
+    }
+
+
+
+  }
+}

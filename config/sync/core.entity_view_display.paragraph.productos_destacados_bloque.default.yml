@@ -1,0 +1,34 @@
+uuid: 8856a97a-d6ca-4f7b-a410-3da7bfa7d1e1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.productos_destacados_bloque.field_producto_destacado
+    - field.field.paragraph.productos_destacados_bloque.field_titulo_de_bloque_destacado
+    - paragraphs.paragraphs_type.productos_destacados_bloque
+  module:
+    - entity_reference_revisions
+id: paragraph.productos_destacados_bloque.default
+targetEntityType: paragraph
+bundle: productos_destacados_bloque
+mode: default
+content:
+  field_producto_destacado:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_titulo_de_bloque_destacado:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,59 @@
+uuid: 4f3259cb-8814-47ff-a831-27cc23018270
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_modules
+    - node.type.page
+    - paragraphs.paragraphs_type.age_gate
+    - paragraphs.paragraphs_type.full_text
+    - paragraphs.paragraphs_type.image_banner
+    - paragraphs.paragraphs_type.main_banner
+    - paragraphs.paragraphs_type.main_slider
+    - paragraphs.paragraphs_type.youtube_video
+  module:
+    - entity_reference_revisions
+id: node.page.field_content_modules
+field_name: field_content_modules
+entity_type: node
+bundle: page
+label: 'Content Modules'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      age_gate: age_gate
+      full_text: full_text
+      image_banner: image_banner
+      main_banner: main_banner
+      main_slider: main_slider
+      youtube_video: youtube_video
+    negate: 0
+    target_bundles_drag_drop:
+      age_gate:
+        weight: 8
+        enabled: true
+      full_text:
+        weight: 9
+        enabled: true
+      image_banner:
+        weight: 10
+        enabled: true
+      main_banner:
+        weight: 11
+        enabled: true
+      main_slider:
+        weight: 12
+        enabled: true
+      main_slider_item:
+        weight: 13
+        enabled: false
+      youtube_video:
+        weight: 14
+        enabled: true
+field_type: entity_reference_revisions

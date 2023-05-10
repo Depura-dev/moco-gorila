@@ -1,0 +1,40 @@
+uuid: 9da49dbc-b848-473a-9437-da19042a62ee
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - contact
+    - filter
+    - media
+    - paragraphs_type_permissions
+    - search
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Usuario anónimo'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view media'
+  - 'view paragraph content age_gate'
+  - 'view paragraph content bloque_informacion_imagen_texto'
+  - 'view paragraph content bloque_informacion_texto_imagen'
+  - 'view paragraph content full_text'
+  - 'view paragraph content image_banner'
+  - 'view paragraph content main_banner'
+  - 'view paragraph content main_slider'
+  - 'view paragraph content main_slider_home'
+  - 'view paragraph content main_slider_item'
+  - 'view paragraph content main_slider_item_home'
+  - 'view paragraph content producto_descatado_item'
+  - 'view paragraph content productos_destacados_bloque'
+  - 'view paragraph content youtube_video'

@@ -1,0 +1,10 @@
+uuid: 07fa7cf6-50c7-4bc4-bea0-2155cfc68059
+langcode: es
+status: true
+dependencies: {  }
+id: producto_descatado_item
+label: 'producto descatado item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

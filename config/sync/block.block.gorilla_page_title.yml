@@ -1,0 +1,20 @@
+uuid: ad8e5775-6409-48a7-b0cf-7487baf2b7fb
+langcode: es
+status: false
+dependencies:
+  theme:
+    - gorilla
+_core:
+  default_config_hash: qYppfxaWSy6BwGNKdMch1PeUA24PlRTt39jQft6A6Kg
+id: gorilla_page_title
+theme: gorilla
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

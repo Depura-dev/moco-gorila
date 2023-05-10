@@ -1,0 +1,61 @@
+uuid: f5af4795-627f-40e3-bc32-338df51fe930
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_producto_destacado
+    - paragraphs.paragraphs_type.producto_descatado_item
+    - paragraphs.paragraphs_type.productos_destacados_bloque
+  module:
+    - entity_reference_revisions
+id: paragraph.productos_destacados_bloque.field_producto_destacado
+field_name: field_producto_destacado
+entity_type: paragraph
+bundle: productos_destacados_bloque
+label: 'Producto Destacado'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      producto_descatado_item: producto_descatado_item
+    negate: 0
+    target_bundles_drag_drop:
+      age_gate:
+        weight: 12
+        enabled: false
+      bloque_informacion_imagen_texto:
+        weight: 13
+        enabled: false
+      bloque_informacion_texto_imagen:
+        weight: 14
+        enabled: false
+      full_text:
+        weight: 15
+        enabled: false
+      image_banner:
+        weight: 16
+        enabled: false
+      main_banner:
+        weight: 17
+        enabled: false
+      main_slider:
+        weight: 18
+        enabled: false
+      main_slider_item:
+        weight: 19
+        enabled: false
+      producto_descatado_item:
+        weight: 21
+        enabled: true
+      productos_destacados_bloque:
+        weight: 20
+        enabled: false
+      youtube_video:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

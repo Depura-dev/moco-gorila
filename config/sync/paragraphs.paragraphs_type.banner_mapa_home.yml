@@ -1,0 +1,10 @@
+uuid: f4cbb596-90b8-4723-b11a-631094636d8f
+langcode: es
+status: true
+dependencies: {  }
+id: banner_mapa_home
+label: 'Banner Mapa Home'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

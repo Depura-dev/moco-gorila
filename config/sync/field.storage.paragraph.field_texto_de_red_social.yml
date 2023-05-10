@@ -1,0 +1,21 @@
+uuid: 997caea3-048b-4bca-a376-f7976181ca1e
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_texto_de_red_social
+field_name: field_texto_de_red_social
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

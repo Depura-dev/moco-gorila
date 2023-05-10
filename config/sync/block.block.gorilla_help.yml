@@ -1,0 +1,22 @@
+uuid: d6ec5f38-26e0-486a-8f1a-0e05fb75da37
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - gorilla
+_core:
+  default_config_hash: S0Y16qIQfKiOEzWlddOGk3u_BKwAruAheA8VVFfGbLc
+id: gorilla_help
+theme: gorilla
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,61 @@
+uuid: 35ba0aba-5cee-4dbb-9855-37e458ff5a04
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bloque_imagen_descripcion
+    - node.type.homepage
+    - paragraphs.paragraphs_type.bloque_informacion_imagen_texto
+  module:
+    - entity_reference_revisions
+id: node.homepage.field_bloque_imagen_descripcion
+field_name: field_bloque_imagen_descripcion
+entity_type: node
+bundle: homepage
+label: 'bloque imagen descripción'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      bloque_informacion_imagen_texto: bloque_informacion_imagen_texto
+    negate: 0
+    target_bundles_drag_drop:
+      age_gate:
+        weight: 12
+        enabled: false
+      bloque_informacion_imagen_texto:
+        weight: 13
+        enabled: true
+      bloque_informacion_texto_imagen:
+        weight: 14
+        enabled: false
+      full_text:
+        weight: 15
+        enabled: false
+      image_banner:
+        weight: 16
+        enabled: false
+      main_banner:
+        weight: 17
+        enabled: false
+      main_slider:
+        weight: 18
+        enabled: false
+      main_slider_item:
+        weight: 19
+        enabled: false
+      producto_descatado_item:
+        weight: 21
+        enabled: false
+      productos_destacados_bloque:
+        weight: 20
+        enabled: false
+      youtube_video:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

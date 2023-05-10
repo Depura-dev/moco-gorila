@@ -1,0 +1,42 @@
+{%
+        set classes = [
+            'paragraph',
+            'paragraph--type--' ~ paragraph.bundle|clean_class,
+            view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+            not paragraph.isPublished() ? 'paragraph--unpublished',
+            'container-product-oustanding',
+			'test',
+          ]
+ %}
+{% block paragraph %}
+	<section class="container-product-oustanding p-0" {{ attributes.addClass(classes) }}>
+		{% set title_bloque = content.field_titulo_de_bloque_destacado[0] %}
+		<div class="container-product-oustanding__wraper">
+			<header class="container-product-oustanding__title-bloque">
+				<h2>
+					{{title_bloque}}</h2>
+			</header>
+			<div class="js-slider-producto-destacado m-0">
+				{% block content %}
+					{% for producto in prep.product %}
+						{% set title = producto.title[0] %}
+						{% set image = producto.image[0] %}
+						<div class="container-product-oustanding__content m-0">
+							<div class="container-product-oustanding__image">
+								<figure>
+									{{ image  }}
+								</figure>
+							</div>
+							<div class="container-product-oustanding__title-content">
+								<h2 class="container-product-oustanding__title root">{{ title }}</h2>
+							</div>
+						</div>
+					{% endfor %}
+				{% endblock %}
+			</div>
+		</div>
+		<div class="js-slider-destacados-puntos">
+			<div id="js-slider-destacados"></div>
+		</div>
+	</section>
+{% endblock paragraph %}

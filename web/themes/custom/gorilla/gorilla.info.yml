@@ -1,0 +1,26 @@
+name: 'Gorilla'
+type: theme
+description: 'Gorilla subtheme based on Bootstrap 5 theme.'
+core_version_requirement: '^8.9 || ^9'
+'base theme': bootstrap5
+libraries:
+  - gorilla/slider_cdn
+  - gorilla/fa_cdn
+  - gorilla/material_cdn
+  - gorilla/global-styling
+
+regions:
+  header: Header
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region'
+  header_search: 'Header search form'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer_left: Footer left
+  footer_right_social: Footer Social
+  footer_right_legal: Footer Legal
+  footer_right_copyright: Footer Copyright
+

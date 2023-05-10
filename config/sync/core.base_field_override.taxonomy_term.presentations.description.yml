@@ -1,0 +1,20 @@
+uuid: 5fb458ee-841a-4430-b83d-39ed093b6fdf
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.presentations
+  module:
+    - text
+id: taxonomy_term.presentations.description
+field_name: description
+entity_type: taxonomy_term
+bundle: presentations
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

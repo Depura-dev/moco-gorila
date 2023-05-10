@@ -1,0 +1,23 @@
+uuid: 5ba4a417-aef4-4545-8196-eb57744192cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner_link
+    - paragraphs.paragraphs_type.image_banner
+  module:
+    - link
+id: paragraph.image_banner.field_banner_link
+field_name: field_banner_link
+entity_type: paragraph
+bundle: image_banner
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

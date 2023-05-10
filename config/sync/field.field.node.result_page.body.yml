@@ -1,0 +1,23 @@
+uuid: e99563f4-5f98-4dcb-b74f-c34d2cd93414
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.result_page
+  module:
+    - text
+id: node.result_page.body
+field_name: body
+entity_type: node
+bundle: result_page
+label: 'Contenido de Result'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

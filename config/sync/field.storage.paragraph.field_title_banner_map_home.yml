@@ -1,0 +1,21 @@
+uuid: 9e8e3cb6-89e0-4be0-bc39-9b20136d3434
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_title_banner_map_home
+field_name: field_title_banner_map_home
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

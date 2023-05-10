@@ -1,0 +1,30 @@
+uuid: d5a69903-b635-4cce-89a8-5844defd0eb7
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - mobile_detect
+    - system
+  theme:
+    - gorilla
+id: mainnavigation
+theme: gorilla
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  mobile_detect_device_type:
+    id: mobile_detect_device_type
+    negate: null
+    devices: {  }

@@ -1,0 +1,8 @@
+uuid: ae393403-9191-42a3-be24-d684ab8cb3af
+langcode: es
+status: true
+dependencies: {  }
+name: 'Product Line'
+vid: product_line
+description: ''
+weight: 0
