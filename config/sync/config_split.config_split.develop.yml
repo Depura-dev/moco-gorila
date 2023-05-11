@@ -6,11 +6,11 @@ id: develop
 label: Develop
 description: 'Configuración para el sitio web de desarrollo.'
 weight: 0
+stackable: false
+storage: folder
 folder: ../config/develop
 module: {  }
 theme: {  }
-blacklist:
+complete_list:
   - stage_file_proxy.settings
-graylist: {  }
-graylist_dependents: true
-graylist_skip_equal: true
+partial_list: {  }

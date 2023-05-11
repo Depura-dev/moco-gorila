@@ -33,5 +33,4 @@ node_modules
 
 
 # setting stage ignore
-
 config/develop/.htaccess
