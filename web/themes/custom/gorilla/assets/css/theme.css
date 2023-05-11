@@ -1640,6 +1640,9 @@ body::-webkit-scrollbar-thumb {
     color: #4E2583;
     text-transform: uppercase; }
 
+.node__submitted {
+  display: none; }
+
 .product-page {
   position: relative; }
 
