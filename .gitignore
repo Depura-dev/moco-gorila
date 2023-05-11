@@ -35,6 +35,6 @@ node_modules
 # setting stage ignore
 
 config/sync/stage_file_proxy.settings.yml
-/config/sync/stage_file*
+config/sync/stage_file*
 
 config/develop/.htaccess
