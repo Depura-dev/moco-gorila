@@ -26,6 +26,8 @@ permissions:
   - 'use text format restricted_html'
   - 'view media'
   - 'view paragraph content age_gate'
+  - 'view paragraph content banner_images_ig_red_social'
+  - 'view paragraph content banner_mapa_home'
   - 'view paragraph content bloque_informacion_imagen_texto'
   - 'view paragraph content bloque_informacion_texto_imagen'
   - 'view paragraph content full_text'
