@@ -286,6 +286,50 @@ if (menuInstance) {
 
 /***/ }),
 
+/***/ "./js/components/producto-destacado-slider.js":
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _libraries_slick__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./js/libraries/slick.js");
+/* harmony import */ var _libraries_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./js/libraries/utils.js");
+
+
+const SELECTORS = {
+  product: ".js-slider-producto-destacado"
+};
+const sliderInstance = [...document.querySelectorAll(SELECTORS.product)];
+if (sliderInstance) {
+  const OPTIONS = {
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3e3,
+    dots: true,
+    appendDots: $("#js-slider-destacados"),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false,
+          autoplay: false
+        }
+      }
+    ]
+  };
+  sliderInstance.forEach((slider) => {
+    const parent = slider.parentElement;
+    const slickInstance = new _libraries_slick__WEBPACK_IMPORTED_MODULE_0__.GnCarousel(slider, OPTIONS, parent);
+    slickInstance.initCarousel();
+  });
+}
+
+
+/***/ }),
+
 /***/ "./js/components/quiz-options.js":
 /***/ (() => {
 
@@ -1077,14 +1121,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_alert_error__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./js/components/alert-error.js");
 /* harmony import */ var _components_alert_error__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_alert_error__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_main_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./js/components/main-slider.js");
-/* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./js/components/menu.js");
-/* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_menu__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_quiz_options__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./js/components/quiz-options.js");
-/* harmony import */ var _components_quiz_options__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_quiz_options__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_traslate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./js/components/traslate.js");
-/* harmony import */ var _components_traslate__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_traslate__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _test_test__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./js/test/test.js");
-/* harmony import */ var _test_aid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./js/test/aid.js");
+/* harmony import */ var _components_producto_destacado_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./js/components/producto-destacado-slider.js");
+/* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./js/components/menu.js");
+/* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_menu__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_quiz_options__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./js/components/quiz-options.js");
+/* harmony import */ var _components_quiz_options__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_quiz_options__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_traslate__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./js/components/traslate.js");
+/* harmony import */ var _components_traslate__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_traslate__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _test_test__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./js/test/test.js");
+/* harmony import */ var _test_aid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("./js/test/aid.js");
+
 
 
 
@@ -12715,10 +12761,354 @@ return jQuery;
 
 /***/ }),
 
-/***/ "./scss/theme.scss":
-/***/ (() => {
+/***/ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js":
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nHookWebpackError: Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):\nError: PostCSS received undefined instead of CSS string\n    at new Input (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss/lib/input.js:24:13)\n    at parse (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss/lib/parse.js:8:15)\n    at new LazyResult (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss/lib/lazy-result.js:133:16)\n    at Processor.process (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss/lib/processor.js:28:14)\n    at Object.loader (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss-loader/dist/index.js:97:30)\n    at tryRunOrWebpackError (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/webpack/lib/HookWebpackError.js:88:9)\n    at __webpack_require_module__ (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/webpack/lib/Compilation.js:5055:12)\n    at __webpack_require__ (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/webpack/lib/Compilation.js:5012:18)\n    at /home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/webpack/lib/Compilation.js:5083:20\n    at symbolIterator (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/neo-async/async.js:3485:9)\n    at done (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/neo-async/async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at /home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/webpack/lib/Compilation.js:4990:43\n    at symbolIterator (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/neo-async/async.js:3482:9)\n    at timesSync (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/neo-async/async.js:2297:7)\n-- inner error --\nError: Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):\nError: PostCSS received undefined instead of CSS string\n    at new Input (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss/lib/input.js:24:13)\n    at parse (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss/lib/parse.js:8:15)\n    at new LazyResult (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss/lib/lazy-result.js:133:16)\n    at Processor.process (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss/lib/processor.js:28:14)\n    at Object.loader (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss-loader/dist/index.js:97:30)\n    at Object.<anonymous> (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/css-loader/dist/cjs.js!/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/sass-loader/dist/cjs.js!/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/scss/theme.scss:1:7)\n    at /home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/webpack/lib/javascript/JavascriptModulesPlugin.js:441:11\n    at Hook.eval [as call] (eval at create (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:1)\n    at /home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/webpack/lib/Compilation.js:5057:39\n    at tryRunOrWebpackError (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/webpack/lib/HookWebpackError.js:83:7)\n    at __webpack_require_module__ (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/webpack/lib/Compilation.js:5055:12)\n    at __webpack_require__ (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/webpack/lib/Compilation.js:5012:18)\n    at /home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/webpack/lib/Compilation.js:5083:20\n    at symbolIterator (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/neo-async/async.js:3485:9)\n    at done (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/neo-async/async.js:3527:9)\n\nGenerated code for /home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/css-loader/dist/cjs.js!/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/sass-loader/dist/cjs.js!/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/scss/theme.scss\n1 | throw new Error(\"Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):\\nError: PostCSS received undefined instead of CSS string\\n    at new Input (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss/lib/input.js:24:13)\\n    at parse (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss/lib/parse.js:8:15)\\n    at new LazyResult (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss/lib/lazy-result.js:133:16)\\n    at Processor.process (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss/lib/processor.js:28:14)\\n    at Object.loader (/home/nvargasf/Trabajo/depura/moco-gorila/web/themes/custom/gorilla/frontend/node_modules/postcss-loader/dist/index.js:97:30)\");");
+"use strict";
+
+
+/* eslint-env browser */
+
+/*
+  eslint-disable
+  no-console,
+  func-names
+*/
+
+/** @typedef {any} TODO */
+var normalizeUrl = __webpack_require__("./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js");
+
+var srcByModuleId = Object.create(null);
+var noDocument = typeof document === "undefined";
+var forEach = Array.prototype.forEach;
+/**
+ * @param {function} fn
+ * @param {number} time
+ * @returns {(function(): void)|*}
+ */
+
+function debounce(fn, time) {
+  var timeout = 0;
+  return function () {
+    // @ts-ignore
+    var self = this; // eslint-disable-next-line prefer-rest-params
+
+    var args = arguments;
+
+    var functionCall = function functionCall() {
+      return fn.apply(self, args);
+    };
+
+    clearTimeout(timeout); // @ts-ignore
+
+    timeout = setTimeout(functionCall, time);
+  };
+}
+
+function noop() {}
+/**
+ * @param {TODO} moduleId
+ * @returns {TODO}
+ */
+
+
+function getCurrentScriptUrl(moduleId) {
+  var src = srcByModuleId[moduleId];
+
+  if (!src) {
+    if (document.currentScript) {
+      src =
+      /** @type {HTMLScriptElement} */
+      document.currentScript.src;
+    } else {
+      var scripts = document.getElementsByTagName("script");
+      var lastScriptTag = scripts[scripts.length - 1];
+
+      if (lastScriptTag) {
+        src = lastScriptTag.src;
+      }
+    }
+
+    srcByModuleId[moduleId] = src;
+  }
+  /**
+   * @param {string} fileMap
+   * @returns {null | string[]}
+   */
+
+
+  return function (fileMap) {
+    if (!src) {
+      return null;
+    }
+
+    var splitResult = src.split(/([^\\/]+)\.js$/);
+    var filename = splitResult && splitResult[1];
+
+    if (!filename) {
+      return [src.replace(".js", ".css")];
+    }
+
+    if (!fileMap) {
+      return [src.replace(".js", ".css")];
+    }
+
+    return fileMap.split(",").map(function (mapRule) {
+      var reg = new RegExp("".concat(filename, "\\.js$"), "g");
+      return normalizeUrl(src.replace(reg, "".concat(mapRule.replace(/{fileName}/g, filename), ".css")));
+    });
+  };
+}
+/**
+ * @param {TODO} el
+ * @param {string} [url]
+ */
+
+
+function updateCss(el, url) {
+  if (!url) {
+    if (!el.href) {
+      return;
+    } // eslint-disable-next-line
+
+
+    url = el.href.split("?")[0];
+  }
+
+  if (!isUrlRequest(
+  /** @type {string} */
+  url)) {
+    return;
+  }
+
+  if (el.isLoaded === false) {
+    // We seem to be about to replace a css link that hasn't loaded yet.
+    // We're probably changing the same file more than once.
+    return;
+  }
+
+  if (!url || !(url.indexOf(".css") > -1)) {
+    return;
+  } // eslint-disable-next-line no-param-reassign
+
+
+  el.visited = true;
+  var newEl = el.cloneNode();
+  newEl.isLoaded = false;
+  newEl.addEventListener("load", function () {
+    if (newEl.isLoaded) {
+      return;
+    }
+
+    newEl.isLoaded = true;
+    el.parentNode.removeChild(el);
+  });
+  newEl.addEventListener("error", function () {
+    if (newEl.isLoaded) {
+      return;
+    }
+
+    newEl.isLoaded = true;
+    el.parentNode.removeChild(el);
+  });
+  newEl.href = "".concat(url, "?").concat(Date.now());
+
+  if (el.nextSibling) {
+    el.parentNode.insertBefore(newEl, el.nextSibling);
+  } else {
+    el.parentNode.appendChild(newEl);
+  }
+}
+/**
+ * @param {string} href
+ * @param {TODO} src
+ * @returns {TODO}
+ */
+
+
+function getReloadUrl(href, src) {
+  var ret; // eslint-disable-next-line no-param-reassign
+
+  href = normalizeUrl(href);
+  src.some(
+  /**
+   * @param {string} url
+   */
+  // eslint-disable-next-line array-callback-return
+  function (url) {
+    if (href.indexOf(src) > -1) {
+      ret = url;
+    }
+  });
+  return ret;
+}
+/**
+ * @param {string} [src]
+ * @returns {boolean}
+ */
+
+
+function reloadStyle(src) {
+  if (!src) {
+    return false;
+  }
+
+  var elements = document.querySelectorAll("link");
+  var loaded = false;
+  forEach.call(elements, function (el) {
+    if (!el.href) {
+      return;
+    }
+
+    var url = getReloadUrl(el.href, src);
+
+    if (!isUrlRequest(url)) {
+      return;
+    }
+
+    if (el.visited === true) {
+      return;
+    }
+
+    if (url) {
+      updateCss(el, url);
+      loaded = true;
+    }
+  });
+  return loaded;
+}
+
+function reloadAll() {
+  var elements = document.querySelectorAll("link");
+  forEach.call(elements, function (el) {
+    if (el.visited === true) {
+      return;
+    }
+
+    updateCss(el);
+  });
+}
+/**
+ * @param {string} url
+ * @returns {boolean}
+ */
+
+
+function isUrlRequest(url) {
+  // An URL is not an request if
+  // It is not http or https
+  if (!/^[a-zA-Z][a-zA-Z\d+\-.]*:/.test(url)) {
+    return false;
+  }
+
+  return true;
+}
+/**
+ * @param {TODO} moduleId
+ * @param {TODO} options
+ * @returns {TODO}
+ */
+
+
+module.exports = function (moduleId, options) {
+  if (noDocument) {
+    console.log("no window.document found, will not HMR CSS");
+    return noop;
+  }
+
+  var getScriptSrc = getCurrentScriptUrl(moduleId);
+
+  function update() {
+    var src = getScriptSrc(options.filename);
+    var reloaded = reloadStyle(src);
+
+    if (options.locals) {
+      console.log("[HMR] Detected local css modules. Reload all css");
+      reloadAll();
+      return;
+    }
+
+    if (reloaded) {
+      console.log("[HMR] css reload %s", src.join(" "));
+    } else {
+      console.log("[HMR] Reload all css");
+      reloadAll();
+    }
+  }
+
+  return debounce(update, 50);
+};
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js":
+/***/ ((module) => {
+
+"use strict";
+
+
+/* eslint-disable */
+
+/**
+ * @param {string[]} pathComponents
+ * @returns {string}
+ */
+function normalizeUrl(pathComponents) {
+  return pathComponents.reduce(function (accumulator, item) {
+    switch (item) {
+      case "..":
+        accumulator.pop();
+        break;
+
+      case ".":
+        break;
+
+      default:
+        accumulator.push(item);
+    }
+
+    return accumulator;
+  },
+  /** @type {string[]} */
+  []).join("/");
+}
+/**
+ * @param {string} urlString
+ * @returns {string}
+ */
+
+
+module.exports = function (urlString) {
+  urlString = urlString.trim();
+
+  if (/^data:/i.test(urlString)) {
+    return urlString;
+  }
+
+  var protocol = urlString.indexOf("//") !== -1 ? urlString.split("//")[0] + "//" : "";
+  var components = urlString.replace(new RegExp(protocol, "i"), "").split("/");
+  var host = components[0].toLowerCase().replace(/\.$/, "");
+  components[0] = "";
+  var path = normalizeUrl(components);
+  return protocol + host + path;
+};
+
+/***/ }),
+
+/***/ "./scss/theme.scss":
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+    if(true) {
+      // 1683763378578
+      var cssReload = __webpack_require__("./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
+      module.hot.dispose(cssReload);
+      module.hot.accept(undefined, cssReload);
+    }
+  
 
 /***/ }),
 
@@ -17941,7 +18331,7 @@ module.exports.formatError = function (err) {
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
+/******/ 			id: moduleId,
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
@@ -18020,7 +18410,7 @@ module.exports.formatError = function (err) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("7bc48849221de8bdc31d")
+/******/ 		__webpack_require__.h = () => ("6a1e8d0031c0a15e535a")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
