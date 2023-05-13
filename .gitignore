@@ -34,3 +34,6 @@ node_modules
 
 # setting stage ignore
 config/develop/.htaccess
+
+#gitignore config vscode
+.vscode
