@@ -60,6 +60,7 @@ module:
   metatag_twitter_cards: 0
   mobile_detect: 0
   mysql: 0
+
   node: 0
   options: 0
   page_cache: 0
@@ -123,5 +124,7 @@ theme:
   bootstrap5: 0
   gorilla: 0
   gin: 0
+  classy: 0
   stable9: 0
+  stable: 0
 profile: standard
