@@ -17,12 +17,9 @@ not paragraph.isPublished() ? 'paragraph--unpublished',
   {% set texto_link_bloque = content.field_texto_boton_link[0] %}
   {% set link_bloque = content.field_link_boton_bloque[0] %}
   <div class="row g-0 informacion-texto-imagen--moco-quiz">
-    <div class="col-md-6 informacion-texto-imagen--moco-quiz-container-image">
-      <div class="informacion-texto-imagen--moco-quiz-container-image__image">
-        {# Imagen #}
+    <figure class="col-md-6 informacion-texto-imagen--moco-quiz-container-image">
         {{ imagen_bloque }}
-      </div>
-    </div>
+    </figure>
     <div class="col-md-6 informacion-texto-imagen--moco-quiz-text">
       <header class="informacion-texto-imagen--moco-quiz-text__title">
         <h2>{{ titulo_bloque}}</h2>

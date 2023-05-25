@@ -1,6 +1,7 @@
 .informacion-texto-imagen{
   &--moco-quiz{
     &-container-image{
+      margin: 0;
       @include fluid-aspect(3 3, "img");
       object-fit: cover;
       @include from(s) {
@@ -8,20 +9,14 @@
       }
       @include from(m) {
         @include fluid-aspect(6 3, "img");
+        order:2;
       }
       @include from(l) {
         @include fluid-aspect(7 2, "img");
       }
-
-      @include from(m){
-        order:2;
-      }
-      &__image{
-        img{
-          width: 100%;
-          @include from(l){
-            object-fit: fill;
-          }
+      img{
+        @include from(l){
+          object-position: center bottom;
         }
       }
     }
