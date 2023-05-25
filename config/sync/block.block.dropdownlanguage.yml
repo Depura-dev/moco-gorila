@@ -18,7 +18,7 @@ settings:
   label: 'Dropdown Language'
   label_display: '0'
   provider: dropdown_language
-  labels: null
+  labels: {  }
 visibility:
   mobile_detect_device_type:
     id: mobile_detect_device_type
