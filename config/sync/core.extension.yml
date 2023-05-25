@@ -36,6 +36,8 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  gin_login: 0
+  gin_toolbar: 0
   google_analytics: 0
   handler_custom: 0
   help: 0
@@ -118,8 +120,10 @@ module:
 theme:
   olivero: 0
   claro: 0
-  stable: 0
-  classy: 0
   bootstrap5: 0
   gorilla: 0
+  gin: 0
+  classy: 0
+  stable9: 0
+  stable: 0
 profile: standard
