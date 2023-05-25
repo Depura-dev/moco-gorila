@@ -1,0 +1,32 @@
+{%
+set classes = [
+
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+not paragraph.isPublished() ? 'paragraph--unpublished',
+'image-description-paragraph'
+]
+%}
+
+{% block paragraph %}
+<section class="banner-mapa-home p-0" {{ attributes.addClass(classes) }}>
+  {% set imagen_bloque = content.field_imagen_mapa_banner_home[0] %}
+  {% set titulo_bloque = content.field_title_banner_map_home[0] %}
+  {% set texto_link_bloque = content.field_texto_boton_mapa_home[0] %}
+  {% set link_bloque = content.field_link_boton_banner_mapa[0] %}
+  <figure class="banner-mapa-home__image">
+    {{ imagen_bloque }}
+  </figure>
+  <div class="banner-mapa-home--container">
+    <div class="banner-mapa-home--container__title">
+      <h2>{{ titulo_bloque}}</h2>
+    </div>
+    <div class="banner-mapa-home--container__link">
+      <a href="{{link_bloque}}" class="btn-primary">
+        {{ texto_link_bloque }}
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock paragraph %}

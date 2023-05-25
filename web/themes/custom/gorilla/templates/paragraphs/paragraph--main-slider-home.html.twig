@@ -54,8 +54,7 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
 
 {% block paragraph %}
   <section {{ attributes.addClass(classes) }}>
-    <div class="container">
-    <div class="js-main-slider main-slider-home__slider">
+    <div class="js-main-slider main-slider-home__slider p-0">
     {% block content %}
       {% for item in prep.slides %}
         {% set title = item.title[0] %}
@@ -63,18 +62,19 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
         {% set image = item.image[0] %}
         {% set link = item.link[0] %}
         {% set text_link = item.text_link[0] %}
-        <div class="main-slider-home__slide">
+        <div class="main-slider-home-card">
+          <div class="container">
             <div class="row g-0">
-              <div class="main-slider-home__container-image col-lg-5">
-                <figure class="main-slider-home__image">{{image}}</figure>
+              <div class="main-slider-home-card__container-image col-lg-5">
+                <figure class="main-slider-home-card__image">{{image}}</figure>
               </div>
-              <div class="main-slider-home__caption col-lg-7">
-                <div class="main-slider-home__text-content">
-                  <header class="main-slider-home__title"><h2>{{title}}</h2></header>
-                  <div class="main-slider-home__description">
+              <div class="main-slider-home-card__caption col-lg-7">
+                <div class="main-slider-home-card__text-content">
+                  <header class="main-slider-home-card__title"><h2>{{title}}</h2></header>
+                  <div class="main-slider-home-card__description">
                     {{description}}
                   </div>
-                  <div class="main-slider-home__link">
+                  <div class="main-slider-home-card__link">
                     <a class="btn-primary" href="{{link}}" target="">
                       <span class="">{{text_link}}</span>
                     </a>
@@ -82,11 +82,10 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
                 </div>
               </div>
             </div>
-
+          </div>
         </div>
       {% endfor %}
     </div>
-
     <div class="slider-controls slider-controls__arrows js_gn_carousel_controls">
       <div class="slider-controls__prev slider-controls__arrow js_gn_carousel__prev_arrow">
         <span>￩</span>
@@ -96,10 +95,10 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
       </div>
     </div>
     <div class="main-slider-home__dots slider-controls slider-controls__dots js_gn_carousel_controls">
-      <div class="js_gn_carousel__dots dots-blue"></div>
+      <div class="container">
+        <div class="js_gn_carousel__dots dots-blue"></div>
+      </div>
     </div>
-
     {% endblock %}
-    </div>
   </section>
 {% endblock paragraph %}

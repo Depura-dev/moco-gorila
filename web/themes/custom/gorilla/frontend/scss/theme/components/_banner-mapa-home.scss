@@ -1,0 +1,52 @@
+.banner-mapa-home{
+    position: relative;
+    &__image{
+        object-fit: cover;
+        margin: 0;
+        @include fluid-aspect(4 4, 'img');
+        @include from(m){
+            @include fluid-aspect(8 4, 'img');
+        }
+        @include from(l){
+            @include fluid-aspect(16 7, 'img');
+        }
+    }
+    &--container{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap:rem(50px);
+        justify-content: center;
+
+        @include center('both');
+        @include from(m){
+            gap:rem(70px);
+        }
+        @include from(l){
+            gap:rem(90px);
+        }
+        &__title{
+            text-align: center;
+            h2{
+                font-size: rem(18px);
+                @include from(m){
+                    font-size: rem(25px);
+                }
+                @include from(l){
+                    font-size: rem(35px);
+                }
+            }
+        }
+        &__link{
+            a{
+                padding: rem(5px) rem(10px);
+                @include from(m){
+                    padding: rem(5px) rem(30px);
+                }
+                @include from(l){
+                    padding: rem(10px) rem(40px);
+                }
+            }
+        }
+    }
+}

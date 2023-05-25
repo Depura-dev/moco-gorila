@@ -62,7 +62,7 @@ $zindex-pagination: 101;
     @include from(l){
       top: initial;
       left: initial;
-      width: 41%;
+      bottom: space(1);
     }
     .slick-dots {
       @include center("horizontal");
