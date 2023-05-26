@@ -3,7 +3,7 @@ langcode: es
 status: true
 dependencies: {  }
 id: main_slider_home
-label: 'Main Slider Home'
+label: 'Main Slider Sección'
 icon_uuid: null
 icon_default: null
 description: ''

@@ -1,0 +1,21 @@
+uuid: e1e0acea-5467-4219-aa40-b51f6d4838f2
+langcode: es
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_agregar_secciones
+field_name: field_agregar_secciones
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

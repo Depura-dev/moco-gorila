@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.contenido_informativo_moco_de_go.body
+    - field.field.node.contenido_informativo_moco_de_go.field_agregar_secciones
     - node.type.contenido_informativo_moco_de_go
   module:
     - text
@@ -28,5 +29,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_agregar_secciones: true
   langcode: true
   search_api_excerpt: true
