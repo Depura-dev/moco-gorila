@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.contenido_informativo_moco_de_go.body
+    - field.field.node.contenido_informativo_moco_de_go.field_agregar_secciones
     - node.type.contenido_informativo_moco_de_go
   module:
+    - entity_reference_revisions
     - text
     - user
 id: node.contenido_informativo_moco_de_go.default
@@ -19,6 +21,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_agregar_secciones:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
     region: content
   links:
     settings: {  }
