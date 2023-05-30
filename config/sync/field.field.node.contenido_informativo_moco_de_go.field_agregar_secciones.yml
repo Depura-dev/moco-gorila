@@ -5,18 +5,15 @@ dependencies:
   config:
     - field.storage.node.field_agregar_secciones
     - node.type.contenido_informativo_moco_de_go
+    - paragraphs.paragraphs_type.banner_hero_section
     - paragraphs.paragraphs_type.banner_images_ig_red_social
     - paragraphs.paragraphs_type.banner_mapa_home
     - paragraphs.paragraphs_type.bloque_informacion_imagen_texto
     - paragraphs.paragraphs_type.bloque_informacion_texto_imagen
     - paragraphs.paragraphs_type.full_text
-    - paragraphs.paragraphs_type.image_banner
     - paragraphs.paragraphs_type.main_banner
     - paragraphs.paragraphs_type.main_slider
-    - paragraphs.paragraphs_type.main_slider_home
     - paragraphs.paragraphs_type.main_slider_item
-    - paragraphs.paragraphs_type.main_slider_item_home
-    - paragraphs.paragraphs_type.producto_descatado_item
     - paragraphs.paragraphs_type.productos_destacados_bloque
     - paragraphs.paragraphs_type.youtube_video
   module:
@@ -36,24 +33,24 @@ settings:
   handler_settings:
     target_bundles:
       banner_images_ig_red_social: banner_images_ig_red_social
+      banner_hero_section: banner_hero_section
       banner_mapa_home: banner_mapa_home
       bloque_informacion_imagen_texto: bloque_informacion_imagen_texto
       bloque_informacion_texto_imagen: bloque_informacion_texto_imagen
       full_text: full_text
-      image_banner: image_banner
       main_banner: main_banner
       main_slider: main_slider
-      main_slider_home: main_slider_home
       main_slider_item: main_slider_item
-      main_slider_item_home: main_slider_item_home
       productos_destacados_bloque: productos_destacados_bloque
-      producto_descatado_item: producto_descatado_item
       youtube_video: youtube_video
     negate: 0
     target_bundles_drag_drop:
       age_gate:
         weight: 16
         enabled: false
+      banner_hero_section:
+        weight: 18
+        enabled: true
       banner_images_ig_red_social:
         weight: 17
         enabled: true
@@ -71,7 +68,7 @@ settings:
         enabled: true
       image_banner:
         weight: 22
-        enabled: true
+        enabled: false
       main_banner:
         weight: 23
         enabled: true
@@ -80,16 +77,16 @@ settings:
         enabled: true
       main_slider_home:
         weight: 25
-        enabled: true
+        enabled: false
       main_slider_item:
         weight: 26
         enabled: true
       main_slider_item_home:
         weight: 27
-        enabled: true
+        enabled: false
       producto_descatado_item:
         weight: 29
-        enabled: true
+        enabled: false
       productos_destacados_bloque:
         weight: 28
         enabled: true

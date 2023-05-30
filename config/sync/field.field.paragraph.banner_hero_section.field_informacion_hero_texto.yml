@@ -1,0 +1,21 @@
+uuid: c2b1b35e-9934-46e9-af9a-8d644da59b4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_informacion_hero_texto
+    - paragraphs.paragraphs_type.banner_hero_section
+  module:
+    - text
+id: paragraph.banner_hero_section.field_informacion_hero_texto
+field_name: field_informacion_hero_texto
+entity_type: paragraph
+bundle: banner_hero_section
+label: 'Información Hero Texto'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,45 @@
+uuid: 5cf59af9-55a7-4c65-a670-5280a05a6591
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner_hero_section.field_imagen_hero_banner
+    - field.field.paragraph.banner_hero_section.field_informacion_hero_texto
+    - field.field.paragraph.banner_hero_section.field_titulo_hero_section
+    - paragraphs.paragraphs_type.banner_hero_section
+  module:
+    - image
+    - text
+id: paragraph.banner_hero_section.default
+targetEntityType: paragraph
+bundle: banner_hero_section
+mode: default
+content:
+  field_imagen_hero_banner:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_informacion_hero_texto:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_titulo_hero_section:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

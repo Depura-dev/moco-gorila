@@ -1,0 +1,45 @@
+uuid: 0c843ecb-3a50-4a63-906e-566c49f1c6cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner_hero_section.field_imagen_hero_banner
+    - field.field.paragraph.banner_hero_section.field_informacion_hero_texto
+    - field.field.paragraph.banner_hero_section.field_titulo_hero_section
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.banner_hero_section
+  module:
+    - image
+    - text
+id: paragraph.banner_hero_section.default
+targetEntityType: paragraph
+bundle: banner_hero_section
+mode: default
+content:
+  field_imagen_hero_banner:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_informacion_hero_texto:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_titulo_hero_section:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

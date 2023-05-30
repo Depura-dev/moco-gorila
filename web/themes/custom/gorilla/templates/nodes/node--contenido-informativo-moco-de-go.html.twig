@@ -80,12 +80,10 @@
 %}
 <article{{ attributes.addClass(classes) }}>
   {% set body = content.body[0] %}
-  <div class="informative-content container">
-        <header class="informative-content__header">
-          <h1 class="informative-content__title">{{ label[0] }}</h1>
-        </header>
+  {% set seccion_info =  content.field_agregar_secciones %}
+  <div class="informative-content ">
         <div class="informative-content__content">
-          {{ body }}
+          {{ seccion_info }}
         </div>
   </div>
 </article>

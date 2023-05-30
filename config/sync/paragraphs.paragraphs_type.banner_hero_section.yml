@@ -1,0 +1,10 @@
+uuid: ec6559e4-c301-4dbd-9bca-7ecf5fbf670a
+langcode: es
+status: true
+dependencies: {  }
+id: banner_hero_section
+label: 'Banner Hero Section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
