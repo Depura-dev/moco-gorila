@@ -1,0 +1,23 @@
+uuid: bedfcfba-7967-4671-80cf-969b03be7af9
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: contenido_moco_de_gorila
+label: 'Contenido Moco de Gorila'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  6ee46ff1-ff7d-44e0-a8a4-8b97c805d0d4:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 6ee46ff1-ff7d-44e0-a8a4-8b97c805d0d4
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+      contenido_informativo_moco_de_go: contenido_informativo_moco_de_go
+selection_logic: and
+weight: -5
+relationships: {  }
