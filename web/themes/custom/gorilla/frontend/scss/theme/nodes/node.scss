@@ -1,5 +1,9 @@
-.node{
-  &__submitted{
+.node {
+  &__submitted {
+    display: none;
+  }
+
+  .field--type-created {
     display: none;
   }
 }
