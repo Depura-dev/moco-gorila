@@ -36,6 +36,7 @@
  * @see template_preprocess_paragraph()
  *
  * @ingroup themeable
+
  */
 #}
 {%
@@ -47,9 +48,44 @@
   ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      {{ content }}
-    {% endblock %}
-  </div>
+  <section class="banner-images-ig-red-social" {{ attributes.addClass(classes) }}>
+    {% set image_background = content.field_imagen_banner_red_social_i[0] %}
+    {% set image_img1 = content.field_imagen_banner_red_social_i[1] %}
+    {% set image_img2 = content.field_imagen_banner_red_social_i[2] %}
+    {% set image_img3 = content.field_imagen_banner_red_social_i[3] %}
+    {% set image_img4 = content.field_imagen_banner_red_social_i[4] %}
+    {% set text = content.field_texto_de_red_social[0] %}
+    {% set title = content.field_titulo_banner_ig_red_socia[0] %}
+    {% set url = content.field_url_ig_red_social[0] %}
+
+    <figure class="banner-images-ig-red-social__background">
+      {{ image_background }}
+    </figure>
+    <div class="banner-images-ig-red-social__images-container">
+      <header class="banner-images-ig-red-social__header">
+        <h2 class="banner-images-ig-red-social__title">
+          {{ title }}
+        </h2>
+        <div class="banner-images-ig-red-social__cta">
+          <a href="{{url}}" target="_blank" rel="noopener noreferrer">
+            {{ text }}
+          </a>
+        </div>
+      </header>
+      <div class="container">
+        <figure class="banner-images-ig-red-social__image">
+          {{ image_img1 }}
+        </figure>
+        <figure class="banner-images-ig-red-social__image">
+          {{ image_img2 }}
+        </figure>
+        <figure class="banner-images-ig-red-social__image">
+          {{ image_img3 }}
+        </figure>
+        <figure class="banner-images-ig-red-social__image">
+          {{ image_img4 }}
+        </figure>
+      </div>
+    </div>
+  </section>
 {% endblock paragraph %}
