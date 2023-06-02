@@ -1,0 +1,69 @@
+.banner-images-ig-red-social{
+  position: relative;
+
+  &__background {
+    margin: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -9;
+    img{
+      height: 100%;
+      width: 100%;
+      max-width: initial;
+      object-position: center center;
+      object-fit: cover;
+    }
+    @include from(l){
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &__images-container {
+    padding: space(2) space(1);
+    display: flex;
+    flex-wrap: wrap;
+
+    @include from(l){
+      padding: space(3) space(1.5);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas:
+      "img1   header  header  img4"
+      "img1   img2    img3    img4";
+    }
+  }
+  &__header {
+    text-align: center;
+    flex: 1 0 100%;
+    @include from(l){
+      grid-area: header;
+    }
+  }
+  &__cta {
+    margin: space(.25) 0 space(1);
+    a{
+      @extend %h3;
+      text-decoration: none;
+    }
+  }
+  &__image {
+    flex: 1 1 50%;
+    padding: space(.5);
+    margin: 0;
+
+    @include from(l){
+      display: flex;
+      padding: space(1);
+      justify-content: center;
+      align-items: center;
+      @for $i from 2 through 5 {
+        &:nth-child(#{$i}) {
+          grid-area: img#{$i - 1};
+        }
+      }
+    }
+  }
+}
