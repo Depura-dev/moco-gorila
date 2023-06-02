@@ -48,7 +48,7 @@
   ]
 %}
 {% block paragraph %}
-  <section class="banner-images-ig-red-social" {{ attributes.addClass(classes) }}>
+  <section class="banner-images-ig-red-social p-0" {{ attributes.addClass(classes) }}>
     {% set image_background = content.field_imagen_banner_red_social_i[0] %}
     {% set image_img1 = content.field_imagen_banner_red_social_i[1] %}
     {% set image_img2 = content.field_imagen_banner_red_social_i[2] %}
@@ -62,17 +62,16 @@
       {{ image_background }}
     </figure>
     <div class="banner-images-ig-red-social__images-container">
-      <header class="banner-images-ig-red-social__header">
-        <h2 class="banner-images-ig-red-social__title">
-          {{ title }}
-        </h2>
-        <div class="banner-images-ig-red-social__cta">
-          <a href="{{url}}" target="_blank" rel="noopener noreferrer">
-            {{ text }}
-          </a>
-        </div>
-      </header>
-      <div class="container">
+        <header class="banner-images-ig-red-social__header">
+          <h2 class="banner-images-ig-red-social__title">
+            {{ title }}
+          </h2>
+          <div class="banner-images-ig-red-social__cta">
+            <a href="{{url}}" target="_blank" rel="noopener noreferrer">
+              {{ text }}
+            </a>
+          </div>
+        </header>
         <figure class="banner-images-ig-red-social__image">
           {{ image_img1 }}
         </figure>
@@ -85,7 +84,6 @@
         <figure class="banner-images-ig-red-social__image">
           {{ image_img4 }}
         </figure>
-      </div>
     </div>
   </section>
 {% endblock paragraph %}
