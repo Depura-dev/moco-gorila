@@ -254,6 +254,92 @@
   }
 }
 
+.test-flex, .test-grid{
+  &>* {
+    border: 3px dashed gainsboro; //prueba
+  }
+}
+
+%t-content{
+  &>* {
+    border: 3px dashed gainsboro; //prueba
+  }
+};
+
+%t-res{
+  //prueba ayuda----------------
+  &::before{
+    background-color: blue;
+    border-radius: 0 0 0 10px;
+    content: "from(xs)";
+    color:white;
+    display: block;
+    font-weight: bold;
+    position: absolute;
+    padding: 3px 7px;
+    right: 0;
+    top: 0;
+  }
+
+  @include from(s) { // >'s': 576px
+    border: 3px solid red;
+    &::before{
+      background-color: red;
+      content: "from(s)";
+    }
+  }
+  @include from(m) { // >'m': 768px
+    border: 3px solid yellow;
+    &::before{
+      background-color: yellow;
+      content: "from(m)";
+      color: black;
+    }
+  }
+  @include from(l) { // >'l': 992px
+    border: 3px solid purple;
+    &::before{
+      background-color: purple;
+      content: "from(l)";
+      color: white;
+    }
+  }
+  @include from(xl) { // >'xl': 1470px
+    border: 3px solid green;
+    &::before{
+      background-color: green;
+      content: "from(xl)";
+    }
+  }
+};
+
+%t-aid{
+  //prueba responsive----------------
+  section, h1, .row {
+    border: 5px dashed red;
+  }
+  img {
+    border: 3px dashed yellowgreen;
+  }
+  .container {
+    border: 3px dashed blue;
+    .container {
+      border: 5px dashed red;
+    }
+  }
+  .row{
+  &.g-0 {
+      border: 5px dashed yellow;
+    }
+    div[class*="col"] {
+      border: 3px dashed green;
+    }
+  }
+
+  @extend %t-res;
+};
+
+
 .test-viewport{
   //?prueba de responsive--------------
   border: 3px dotted blue; // < 576px

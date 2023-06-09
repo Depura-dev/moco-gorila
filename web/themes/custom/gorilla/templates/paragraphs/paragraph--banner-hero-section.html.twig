@@ -47,19 +47,21 @@
   ]
 %}
 {% block paragraph %}
-  <section class="banner-hero-section" {{ attributes.addClass(classes) }}>
+  <section class="banner-hero-section g-0" {{ attributes.addClass(classes) }}>
     {% set image = content.field_imagen_hero_banner[0] %}
     {% set text = content.field_informacion_hero_texto[0] %}
     {% set title = content.field_titulo_hero_section[0] %}
     <figure class="banner-hero-section__image">
         {{ image }}
     </figure>
-    <div class="banner-hero-section__content">
-      <h2 class="banner-hero-section__title">
-          {{ title }}
-      </h2>
-      <div class="banner-hero-section__text">
-          {{text}}
+    <div class="container">
+      <div class="banner-hero-section__content row g-0">
+        <div class="banner-hero-section__title col-lg-7">
+          <header><h1>{{ title }}</h1></header>
+        </div>
+        <div class="banner-hero-section__text col-lg-5">
+            {{text}}
+        </div>
       </div>
     </div>
   </section>

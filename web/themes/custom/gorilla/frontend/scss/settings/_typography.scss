@@ -1,7 +1,9 @@
-%h1, h1, h1:not(.root) {
+%h1,
+h1,
+h1:not(.root) {
   background-color: $purple;
   box-decoration-break: clone;
-  box-shadow: 0.2em 0 0 $purple,-0.2em 0 0 $purple;
+  box-shadow: 0.2em 0 0 $purple, -0.2em 0 0 $purple;
   color: $white;
   display: inline;
   font-family: $font-secondary;
@@ -17,7 +19,9 @@
   }
 }
 
-%h2, h2, h2:not(.root) {
+%h2,
+h2,
+h2:not(.root) {
   @extend %h1;
   font-size: rem(28px);
 
@@ -26,7 +30,9 @@
   }
 }
 
-%h3, h2, h3:not(.root){
+%h3,
+h2,
+h3:not(.root) {
   @extend %h2;
   text-transform: initial;
   font-size: rem(22px);
@@ -36,14 +42,15 @@
   }
 }
 
-%body, .body {
+%body,
+.body {
   color: $purple;
   font-family: $font-primary;
   font-size: rem(16px);
   font-weight: 400;
   line-height: 1.4;
 
-  @include from(l){
+  @include from(l) {
     font-size: rem(22px);
   }
 }
@@ -52,7 +59,7 @@
   @extend %body;
   font-size: rem(17px);
 
-  @include from(l){
+  @include from(l) {
     font-size: rem(30px);
   }
 }
@@ -61,7 +68,7 @@
   @extend %body;
   font-size: rem(15px);
 
-  @include from(l){
+  @include from(l) {
     font-size: rem(26px);
   }
 }
@@ -72,7 +79,7 @@
   font-size: rem(16px);
   text-transform: uppercase;
 
-  @include from(l){
+  @include from(l) {
     font-size: rem(20px);
   }
 }
@@ -81,13 +88,13 @@
   @extend %body;
   font-size: rem(14px);
 
-  @include from(l){
+  @include from(l) {
     font-size: rem(15px);
   }
 }
 
-
-%button-text, .button-text {
+%button-text,
+.button-text {
   @extend %body;
   font-size: rem(16px);
   font-weight: 500;
@@ -95,11 +102,15 @@
   text-decoration: none;
 }
 
-p, ul:not(.root), ol:not(.root), div {
+p,
+ul:not(.root),
+ol:not(.root),
+div {
   @extend %body;
 }
 
-strong, b {
+strong,
+b {
   font-weight: bold;
 }
 
