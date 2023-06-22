@@ -1,0 +1,54 @@
+.full-text{
+    &-container{
+        p{
+            margin: 0;
+            text-align: center;
+        }
+    }
+    &--purples{
+        background-color: $purple;
+        .container{
+            padding:rem(30px);
+            @include from(m){
+                padding: rem(50px);
+            }
+            @include from(l){
+                padding: rem(100px) rem(120px);
+            }
+        }
+    }
+    &--yellow{
+        background-color: $yellow;
+        .container{
+            padding: rem(20px) rem(15px);
+            text-align: center;
+            @include from(l){
+                padding: rem(50px) rem(15px);
+            }
+            .row{
+                align-items: center;
+                justify-content: center;
+                @include from(l){
+                    padding: rem(10px) rem(120px);
+                }
+            }
+            p, span, strong{
+                color:$purple;
+            }
+            h2{
+                @extend %h3;
+                font-size: rem(16px);
+                margin:rem(1px);
+                text-transform: uppercase;
+                text-align: center;
+                width: fit-content;
+                @include from(m){
+                    font-size: rem(28px);
+                }
+                @include from(l){
+                    font-size: rem(40px);
+                }
+            }
+        }
+    }
+}
