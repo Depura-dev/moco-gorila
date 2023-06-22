@@ -11,3 +11,56 @@
     background: radial-gradient(ellipse at center, $start-color, $end-color);
   }
 }
+
+
+//secuencia de elementos con nt-child(#)
+@mixin sequence($selector, $list, $property: background-color, $move: 0) {
+  $list-size: length($list);
+  $selector-split: str-split($selector, " ");
+  $child: '';
+
+  @if(length($selector-split) > 1){
+    @for $i from 2 through length($selector-split) {
+      $child: $child + ' ' + nth($selector-split, $i);
+    }
+    @for $i from 1 + $move through $list-size + $move {
+      #{nth($selector-split, 1)}:nth-child(#{$i}) {
+        #{$child}{
+          #{$property}: nth($list, $i - $move);
+        }
+      }
+    }
+  } @else{
+    @for $i from 1 + $move through $list-size + $move {
+      #{$selector}:nth-child(#{$i}) {
+        #{$property}: nth($list, $i - $move);
+      }
+    }
+  }
+}
+
+//secuencia de elementos con nt-child(#n)
+@mixin sequence-n($selector, $list, $property: background-color) {
+  $list-size: length($list);
+  $selector-split: str-split($selector, " ");
+  $child: '';
+
+  @if(length($selector-split) > 1){
+    @for $i from 2 through length($selector-split) {
+      $child: $child + ' ' + nth($selector-split, $i);
+    }
+    @for $i from 1 through $list-size {
+      #{nth($selector-split, 1)}:nth-child(#{$list-size}n - #{$list-size - $i}) {
+        #{$child}{
+          #{$property}: nth($list, $i);
+        }
+      }
+    }
+  } @else{
+    @for $i from 1 through $list-size {
+      #{$selector}:nth-child(#{$list-size}n - #{$list-size - $i}) {
+        #{$property}: nth($list, $i);
+      }
+    }
+  }
+}

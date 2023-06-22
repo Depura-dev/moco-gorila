@@ -20,6 +20,30 @@
   }
 }
 
+@mixin float($position, $amplitude:50%) {
+  position: absolute;
+  @if $position == 'left' {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: $amplitude;
+  } @else if $position == 'right' {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: $amplitude;
+  } @else if $position == 'top' {
+    top: 0;
+    right: 0;
+    left: 0;
+    height: $amplitude;
+  } @else if $position == 'bottom' {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: $amplitude;
+  }
+}
 
 @mixin fluid-aspect($ratio: 1 1, $selector: '> :first-child') {
 	$selector: unquote($selector);
