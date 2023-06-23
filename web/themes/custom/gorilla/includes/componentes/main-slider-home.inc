@@ -31,18 +31,13 @@ function _render_slider_items(array $slider_items) {
     $slider_item = $slider_item->getTranslation($lang_code);
 
     /** @var \Drupal\Core\Field\FieldItemListInterface */
-    $title = $slider_item->field_msh_text_slider_title;
-    $description = $slider_item->field_msh_descripcion;
-    $image = $slider_item->field_msh_image;
-    $link = $slider_item->field_msh_link;
-    $text_link = $slider_item->field_msh_text_link;
-
+    
     $slider_arr[] = [
-      'title' => $title->view('full'),
-      'description' => $description->view('full'),
-      'image' => $image->view('full'),
-      'link' => $link->view('full'),
-      'text_link' => $text_link->view('full'),
+      'title' => $slider_item->field_msh_text_slider_title->view('full'),
+      'description' => $slider_item->field_msh_descripcion->view('full'),
+      'image' => $slider_item->field_msh_image->view('full'),
+      'link' => $slider_item->field_msh_link->view('full'),
+      'text_link' => $slider_item->field_msh_text_link->view('full'),
     ];
   }
 

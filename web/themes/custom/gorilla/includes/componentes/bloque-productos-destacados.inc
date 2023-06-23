@@ -28,16 +28,14 @@ function _render_product_items(array  $products_items) {
   $product_arr = [];
 
   foreach ($products_items as $product_item) {
-    
+
     $product_item = $product_item->getTranslation($lang_code);
 
     /** @var \Drupal\Core\Field\FieldItemListInterface */
-    $title = $product_item->field_titulo_de_producto_destaca;
-    $image = $product_item->field_imagen_de_producto_destaca;
 
     $product_arr[] = [
-      'image' => $image->view('full'),
-      'title' => $title->view('full'),
+      'image' => $product_item->field_titulo_de_producto_destaca->view('full'),
+      'title' => $product_item->field_titulo_de_producto_destaca->view('full'),
     ];
   }
 
