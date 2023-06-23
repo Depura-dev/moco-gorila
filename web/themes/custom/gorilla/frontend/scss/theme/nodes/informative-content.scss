@@ -9,13 +9,13 @@
   }
 
   &__content {
-    h2 {
-      @extend %body-featured;
-      box-shadow: none;
-      background-color: transparent;
-      display: block;
-      padding: space(0.5) 0;
-    }
+    // h2 {
+    //   @extend %body-featured;
+    //   box-shadow: none;
+    //   background-color: transparent;
+    //   display: block;
+    //   padding: space(0.5) 0;
+    // }
 
     p,
     strong,
