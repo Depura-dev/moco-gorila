@@ -1,0 +1,33 @@
+uuid: 11e9db59-b9c1-4383-9326-dfa7b67a3e14
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.full_video_content.field_color_identity
+    - field.field.paragraph.full_video_content.field_video_content_full
+    - paragraphs.paragraphs_type.full_video_content
+  module:
+    - options
+id: paragraph.full_video_content.default
+targetEntityType: paragraph
+bundle: full_video_content
+mode: default
+content:
+  field_color_identity:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_video_content_full:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

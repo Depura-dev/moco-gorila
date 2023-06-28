@@ -1,0 +1,21 @@
+uuid: de270dd5-796c-492a-8004-5afa0a0f2087
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color_identity
+    - paragraphs.paragraphs_type.full_video_content
+  module:
+    - options
+id: paragraph.full_video_content.field_color_identity
+field_name: field_color_identity
+entity_type: paragraph
+bundle: full_video_content
+label: 'Color Identity'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
