@@ -3,16 +3,25 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.paragraph.producto_descatado_item.field_color_identity
     - field.field.paragraph.producto_descatado_item.field_imagen_de_producto_destaca
     - field.field.paragraph.producto_descatado_item.field_titulo_de_producto_destaca
     - paragraphs.paragraphs_type.producto_descatado_item
   module:
     - image
+    - options
 id: paragraph.producto_descatado_item.default
 targetEntityType: paragraph
 bundle: producto_descatado_item
 mode: default
 content:
+  field_color_identity:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_imagen_de_producto_destaca:
     type: image
     label: hidden

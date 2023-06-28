@@ -1,6 +1,6 @@
 langcode: es
 hotlink: false
-origin: 'https://dep5.sinip.co/docroot/web'
+origin: 'https://dep5.sinip.co'
 origin_dir: sites/default/files
 use_imagecache_root: false
 verify: false

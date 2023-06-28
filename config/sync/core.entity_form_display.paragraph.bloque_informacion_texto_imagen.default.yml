@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.paragraph.bloque_informacion_texto_imagen.field_color_identity
     - field.field.paragraph.bloque_informacion_texto_imagen.field_descripcion_bloque
     - field.field.paragraph.bloque_informacion_texto_imagen.field_imagen_bloque
     - field.field.paragraph.bloque_informacion_texto_imagen.field_link_boton_bloque
@@ -17,6 +18,12 @@ targetEntityType: paragraph
 bundle: bloque_informacion_texto_imagen
 mode: default
 content:
+  field_color_identity:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_descripcion_bloque:
     type: string_textarea
     weight: 1

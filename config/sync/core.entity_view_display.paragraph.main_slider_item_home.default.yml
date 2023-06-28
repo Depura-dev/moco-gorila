@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.paragraph.main_slider_item_home.field_color_identity
     - field.field.paragraph.main_slider_item_home.field_msh_descripcion
     - field.field.paragraph.main_slider_item_home.field_msh_image
     - field.field.paragraph.main_slider_item_home.field_msh_link
@@ -11,12 +12,20 @@ dependencies:
     - paragraphs.paragraphs_type.main_slider_item_home
   module:
     - image
+    - options
     - text
 id: paragraph.main_slider_item_home.default
 targetEntityType: paragraph
 bundle: main_slider_item_home
 mode: default
 content:
+  field_color_identity:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
   field_msh_descripcion:
     type: text_default
     label: hidden

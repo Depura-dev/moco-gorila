@@ -3,18 +3,27 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.paragraph.banner_hero_section.field_color_identity
     - field.field.paragraph.banner_hero_section.field_imagen_hero_banner
     - field.field.paragraph.banner_hero_section.field_informacion_hero_texto
     - field.field.paragraph.banner_hero_section.field_titulo_hero_section
     - paragraphs.paragraphs_type.banner_hero_section
   module:
     - image
+    - options
     - text
 id: paragraph.banner_hero_section.default
 targetEntityType: paragraph
 bundle: banner_hero_section
 mode: default
 content:
+  field_color_identity:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_imagen_hero_banner:
     type: image
     label: hidden

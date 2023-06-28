@@ -1,0 +1,21 @@
+uuid: 0f8b68dc-7a23-4914-af48-0b0e2522fecd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color_identity
+    - paragraphs.paragraphs_type.producto_descatado_item
+  module:
+    - options
+id: paragraph.producto_descatado_item.field_color_identity
+field_name: field_color_identity
+entity_type: paragraph
+bundle: producto_descatado_item
+label: 'Color Identity'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

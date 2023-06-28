@@ -1,0 +1,21 @@
+uuid: 74a48eff-dc80-44dd-8f43-aaa8167bc88a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color_identity
+    - paragraphs.paragraphs_type.banner_hero_section
+  module:
+    - options
+id: paragraph.banner_hero_section.field_color_identity
+field_name: field_color_identity
+entity_type: paragraph
+bundle: banner_hero_section
+label: 'Color Identity'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
