@@ -13,16 +13,22 @@ settings:
   allowed_values:
     -
       value: purples
-      label: Purples
+      label: purples
     -
       value: yellow-violet
-      label: 'Yellow Violet'
+      label: yellow-violet
     -
       value: orange-violet
-      label: 'Orange Violet'
+      label: orange-violet
     -
       value: blue-violet
-      label: 'Blue Violet'
+      label: blue-violet
+    -
+      value: red
+      label: red
+    -
+      value: green
+      label: green
   allowed_values_function: ''
 module: options
 locked: false

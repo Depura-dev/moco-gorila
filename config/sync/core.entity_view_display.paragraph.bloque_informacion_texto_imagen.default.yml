@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.paragraph.bloque_informacion_texto_imagen.field_color_identity
     - field.field.paragraph.bloque_informacion_texto_imagen.field_descripcion_bloque
     - field.field.paragraph.bloque_informacion_texto_imagen.field_imagen_bloque
     - field.field.paragraph.bloque_informacion_texto_imagen.field_link_boton_bloque
@@ -11,11 +12,19 @@ dependencies:
     - paragraphs.paragraphs_type.bloque_informacion_texto_imagen
   module:
     - image
+    - options
 id: paragraph.bloque_informacion_texto_imagen.default
 targetEntityType: paragraph
 bundle: bloque_informacion_texto_imagen
 mode: default
 content:
+  field_color_identity:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
   field_descripcion_bloque:
     type: basic_string
     label: hidden

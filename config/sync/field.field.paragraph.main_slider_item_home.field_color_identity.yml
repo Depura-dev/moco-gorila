@@ -1,0 +1,21 @@
+uuid: dee6d150-ebaa-4345-8fa9-3cb2d33e837d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color_identity
+    - paragraphs.paragraphs_type.main_slider_item_home
+  module:
+    - options
+id: paragraph.main_slider_item_home.field_color_identity
+field_name: field_color_identity
+entity_type: paragraph
+bundle: main_slider_item_home
+label: 'Color Identity'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,72 @@
+uuid: 18acfedb-043a-4bb8-8dbd-6d63458d6637
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_product_image
+    - field.storage.node.field_product_type
+    - search_api.server.default_server
+  module:
+    - node
+    - search_api
+id: productos
+name: Productos
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_product_image:
+    label: 'Product Image'
+    datasource_id: 'entity:node'
+    property_path: field_product_image
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_product_image
+  field_product_type:
+    label: 'Product Type'
+    datasource_id: 'entity:node'
+    property_path: field_product_type
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_product_type
+  title:
+    label: Título
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - product
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: default_server

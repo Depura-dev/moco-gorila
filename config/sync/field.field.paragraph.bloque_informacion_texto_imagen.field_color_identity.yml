@@ -1,0 +1,21 @@
+uuid: a7cb2711-7e2a-43c7-908d-3c57f367fb76
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color_identity
+    - paragraphs.paragraphs_type.bloque_informacion_texto_imagen
+  module:
+    - options
+id: paragraph.bloque_informacion_texto_imagen.field_color_identity
+field_name: field_color_identity
+entity_type: paragraph
+bundle: bloque_informacion_texto_imagen
+label: 'Color Identity'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
