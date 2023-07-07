@@ -17,31 +17,39 @@ id: contact
 title: Contact
 description: 'Basic email contact webform.'
 category: ''
-elements: |
+elements: |-
   name:
-    '#title': 'Your Name'
     '#type': textfield
+    '#title': Nombre
+    '#placeholder': Nombre
     '#required': true
     '#default_value': '[current-user:display-name]'
   email:
-    '#title': 'Your Email'
     '#type': email
+    '#title': Email
+    '#placeholder': E-mail
     '#required': true
     '#default_value': '[current-user:mail]'
   subject:
-    '#title': Subject
     '#type': textfield
+    '#title': Asunto
+    '#placeholder': Asunto
     '#required': true
     '#test': 'Testing contact webform from [site:name]'
   message:
-    '#title': Message
     '#type': textarea
+    '#title': Mensaje
+    '#placeholder': Mensaje
     '#required': true
     '#test': 'Please ignore this email.'
+  he_leido_y_acepto_terminos_y_condiciones:
+    '#type': checkbox
+    '#title': 'He leído y acepto términos y condiciones'
+    '#required': true
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
-    '#submit__label': 'Send message'
+    '#submit__label': Enviar
 css: ''
 javascript: ''
 settings:
