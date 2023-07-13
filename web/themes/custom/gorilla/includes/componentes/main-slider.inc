@@ -33,9 +33,9 @@ function _render_slider_items(array $slider_items) {
     /** @var \Drupal\Core\Field\FieldItemListInterface */
 
     $slider_arr[] = [
-      'color-identity' => $slider_item->field_color_identity->view('full'),
-      'image' => $slider_item->field_msh_image->view('full'),
-      'link' => $slider_item->field_msh_link->view('full'),
+      'color_identity' => $slider_item->field_color_identity->view('full'),
+      'image' => $slider_item->field_ms_image->view('full'),
+      'link' => $slider_item->field_ms_link->view('full'),
       'text' => $slider_item->field_ms_text->view('full'),
       'title' => $slider_item->field_ms_title->view('full'),
     ];

@@ -57,12 +57,12 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
     <div class="js-main-slider main-slider__slider p-0">
     {% block content %}
       {% for item in prep.slides %}
-        {% set title = item.title[0] %}
-        {% set description = item.description[0] %}
+        {% set color = item.color_identity['#items'].value %}
         {% set image = item.image[0] %}
+        {% set text = item.text[0] %}
         {% set link = item.link[0] %}
-        {% set text_link = item.text_link[0] %}
-        <div class="main-slider-card">
+        {% set title = item.title[0] %}
+        <div class="main-slider-card main-slider-card--{{color}}">
           <div class="container">
             <div class="row g-0">
               <div class="main-slider-card__container-image col-lg-5">
@@ -71,13 +71,15 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
               <div class="main-slider-card__caption col-lg-7">
                 <div class="main-slider-card__text-content">
                   <header class="main-slider-card__title"><h2>{{title}}</h2></header>
-                  <div class="main-slider-card__description">
-                    {{description}}
+                  <div class="main-slider-card__text">
+                    {{text}}
                   </div>
                   <div class="main-slider-card__link">
-                    <a class="btn-primary" href="{{link}}" target="">
-                      <span class="">{{text_link}}</span>
-                    </a>
+                    {% if link['#title'].value %}
+                      <a class="btn-primary" href="{{link['#url'].value}}" target="">
+                        <span>{{link['#title'].value}}</span>
+                      </a>
+                    {% endif %}
                   </div>
                 </div>
               </div>

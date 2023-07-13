@@ -5,6 +5,21 @@
             text-align: center;
         }
     }
+    &--blue-violet{
+      background-color: $blue-lt;
+      p{
+        color: $purple;
+      }
+      .container{
+          padding:rem(30px);
+          @include from(m){
+              padding: rem(50px);
+          }
+          @include from(l){
+              padding: rem(100px) rem(120px);
+          }
+      }
+    }
     &--purples{
         background-color: $purple;
         .container{

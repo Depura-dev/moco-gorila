@@ -5,18 +5,20 @@ set classes = [
 'paragraph--type--' ~ paragraph.bundle|clean_class,
 view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 not paragraph.isPublished() ? 'paragraph--unpublished',
-'image-description-paragraph'
+'image-description-paragraph',
+'p-0',
+'full-text '
 ]
 %}
 
 {% block paragraph %}
-  {% set color = content.field_color_identity[0] %}
+  {% set color = content.field_color_identity['#items'].value %}
   {% set text_full = content.field_rich_text[0] %}
-<section class="full-text full-text--{{color}} p-0 test" {{ attributes.addClass(classes) }}>
+<section {{ attributes.addClass(classes, 'full-text--' ~ color) }}>
   <div class="container">
     <div class="row g-0 full-text-container">
     {{ text_full}}
-  </div>
+    </div>
   </div>
 </section>
 {% endblock paragraph %}

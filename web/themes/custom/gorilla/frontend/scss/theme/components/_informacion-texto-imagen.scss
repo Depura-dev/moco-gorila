@@ -59,9 +59,6 @@
           @include from(s) {
             padding: 3% 0 10% 0;
           }
-          @include from(m) {
-            padding: 3% 0 10% 0;
-          }  
           @include from(l) {
             padding: 10% 5% 10% 10%;
           }
@@ -69,9 +66,6 @@
 
         @include from(s) {
           padding: 5% 10% 0 10%;
-        }
-        @include from(m) {
-          padding: 5% 20% 0% 10%;
         }
         @include from(l) {
           padding: 5% 20% 0% 10%;
