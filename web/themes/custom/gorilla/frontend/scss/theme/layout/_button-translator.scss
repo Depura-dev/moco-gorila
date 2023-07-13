@@ -1,74 +1,74 @@
 #block-dropdownlanguage {
   --content-pseudo: "";
-  position: fixed;
-  right: space(1);
-  top: 9px;
   background-color: transparent !important;
+  bottom: space(2);
   min-height: 50px;
+  position: fixed;
+  right: space(2);
 
   &::after {
     color: transparent;
     content: "";
     display: inline-block;
     height: rem(50px);
-    position: absolute;
-    top: 0;
-    right: rem(50px);
-    width: rem(33px);
     pointer-events: painted;
+    position: absolute;
+    right: rem(50px);
+    top: 0;
+    width: rem(33px);
   }
 
   .dropbutton-widget {
-    padding: 0;
     background-color: transparent;
     border: none;
+
     min-height: 50px;
+    padding: 0;
     position: relative;
 
     ul {
       border: none;
-      min-height: 50px;
-      display: flex;
       flex-direction: column !important;
+      min-height: 50px;
+      overflow: visible;
+      position: relative;
     }
 
     li {
       height: 50px;
     }
-
   }
 
   .dropbutton-toggle {
     color: transparent;
-    max-width: 0;
   }
 
   .active-language {
+    background-color: transparent;
+    color: transparent;
+    margin: 0;
+    min-height: 50px !important;
+    transform: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
     -ms-user-select: none;
-    color: transparent;
-    background-color: transparent;
-    min-height: 50px !important;
-    transform: none;
-    margin: 0;
 
     &::before {
       align-items: center;
       background-color: $yellow;
       border: 3px solid $purple;
-      color: $purple;
       border-radius: 50%;
-      display: flex;
+      color: $purple;
       content: var(--content-pseudo);
+      display: flex;
       font-size: 20px;
       font-weight: 500;
       height: 50px;
+      justify-content: center;
       padding: 0;
       position: absolute;
       right: 0;
-      justify-content: center;
       top: 0;
       width: 50px;
       @extend %cursor-pointer;
@@ -78,19 +78,23 @@
   .secondary-action {
     background-color: $yellow;
     border: 3px solid $purple !important;
+    position: absolute;
+    top: rem(60px);
+    top: 100%;
+
 
     li {
+      align-items: center;
       display: flex;
       justify-content: center;
-      align-items: center;
     }
 
     a {
-      text-decoration: none;
       color: $purple;
       font-size: 17px;
       font-weight: 600;
       margin: 0 !important;
+      text-decoration: none;
     }
   }
 }

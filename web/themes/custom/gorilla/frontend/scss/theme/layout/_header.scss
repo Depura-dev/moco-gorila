@@ -32,7 +32,7 @@
   margin-top: 10px;
   @include from(m){
     margin-left: 15px;
-  }  
+  }
   @include imageBg('../img/icono_cerrar-moco-de-gorila.svg', rem(30px), rem(30px));
   @include from(l){
     display: none;
@@ -53,7 +53,7 @@
     z-index: 2000;
     ul{
       padding-top:rem(100px);
-      height: 75vh;     
+      height: 75vh;
       @include from(m){
         margin-top: rem(-60px);
         height: 45vh;
@@ -105,7 +105,7 @@
       margin-top: rem(15px);
     }
     .dropbutton-wrapper{
-      display: none;
+      // display: none;
     }
   }
   &__menu {
