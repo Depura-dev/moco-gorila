@@ -54,7 +54,7 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
 
 {% block paragraph %}
   <section {{ attributes.addClass(classes) }}>
-    <div class="js-main-slider main-slider__slider p-0">
+    <div class="js-main-slider main-slider__slider p-0 m-0">
     {% block content %}
       {% for item in prep.slides %}
         {% set color = item.color_identity['#items'].value %}
@@ -63,24 +63,22 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
         {% set link = item.link[0] %}
         {% set title = item.title[0] %}
         <div class="main-slider-card main-slider-card--{{color}}">
-          <div class="container">
-            <div class="row g-0">
-              <div class="main-slider-card__container-image col-lg-5">
-                <figure class="main-slider-card__image">{{image}}</figure>
-              </div>
-              <div class="main-slider-card__caption col-lg-7">
-                <div class="main-slider-card__text-content">
-                  <header class="main-slider-card__title"><h2>{{title}}</h2></header>
-                  <div class="main-slider-card__text">
-                    {{text}}
-                  </div>
-                  <div class="main-slider-card__link">
-                    {% if link['#title'].value %}
-                      <a class="btn-primary" href="{{link['#url'].value}}" target="">
-                        <span>{{link['#title'].value}}</span>
-                      </a>
-                    {% endif %}
-                  </div>
+          <div class="row g-0">
+            <div class="main-slider-card__container-image col-lg-6">
+              <figure class="main-slider-card__image">{{image}}</figure>
+            </div>
+            <div class="main-slider-card__caption col-lg-6">
+              <div class="main-slider-card__text-content">
+                <header class="main-slider-card__title"><h2>{{title}}</h2></header>
+                <div class="main-slider-card__text">
+                  {{text}}
+                </div>
+                <div class="main-slider-card__link">
+                  {% if link['#title'].value %}
+                    <a class="btn-primary" href="{{link['#url'].value}}" target="">
+                      <span>{{link['#title'].value}}</span>
+                    </a>
+                  {% endif %}
                 </div>
               </div>
             </div>

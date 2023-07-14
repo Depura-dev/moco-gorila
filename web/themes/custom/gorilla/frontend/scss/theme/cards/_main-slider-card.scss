@@ -1,0 +1,44 @@
+.main-slider-card {
+  display: block !important;
+
+  $self: &;
+  &__image {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 90%;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__caption {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__text-content {
+    margin-top: 10%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: space(1);
+  }
+
+  &--orange-violet {
+    background-color: $orange;
+
+  }
+
+  &--blue-violet {
+    background-color: $blue-lt;
+  }
+}

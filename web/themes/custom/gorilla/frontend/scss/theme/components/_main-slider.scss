@@ -1,15 +1,18 @@
-.main-slider-home {
+.main-slider {
   position: relative;
-  .container {
-    @include from(l) {
-      position: relative;
-    }
-    @include from(xl){
-      position: static;
+
+  .slick-slide{
+    & > div {
+      display: block !important;
     }
   }
 
   .slick-dotted.slick-slider {
     margin-bottom: 0;
+  }
+
+  .slider-controls__arrows {
+    max-width: 100%;
+    padding: 0 space(1.5);
   }
 }

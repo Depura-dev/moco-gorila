@@ -1,6 +1,6 @@
 .main-slider-home-card {
+  // border: 3px solid aqua; //prueba
   $self: &;
-  padding: space(2) 0;
   &__image {
     margin: 0;
     display: flex;
@@ -25,7 +25,7 @@
     justify-content: flex-start;
     align-items: center;
   }
-  
+
   &__text-content {
     max-width: rem(700px);
     display: flex;

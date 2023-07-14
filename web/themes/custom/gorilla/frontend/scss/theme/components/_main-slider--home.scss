@@ -1,12 +1,6 @@
 .main-slider--home {
-  position: relative;
   .container {
-    @include from(l) {
-      position: relative;
-    }
-    @include from(xl){
-      position: static;
-    }
+    position: relative;
   }
 
   .slick-dotted.slick-slider {
