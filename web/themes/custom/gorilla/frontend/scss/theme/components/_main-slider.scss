@@ -1,12 +1,6 @@
 .main-slider {
   position: relative;
 
-  .slick-slide{
-    & > div {
-      display: block !important;
-    }
-  }
-
   .slick-dotted.slick-slider {
     margin-bottom: 0;
   }

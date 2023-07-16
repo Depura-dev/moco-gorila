@@ -57,12 +57,13 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
     <div class="js-main-slider main-slider-home__slider p-0">
     {% block content %}
       {% for item in prep.slides %}
+        {% set color = item.color_identity['#items'].value %}
         {% set title = item.title[0] %}
         {% set description = item.description[0] %}
         {% set image = item.image[0] %}
         {% set link = item.link[0] %}
         {% set text_link = item.text_link[0] %}
-        <div class="main-slider-home-card">
+        <div class="main-slider-home-card main-slider-home-card--{{color}}">
           <div class="container">
             <div class="row g-0">
               <div class="main-slider-home-card__container-image col-lg-5">

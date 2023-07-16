@@ -78,15 +78,15 @@ input[type="number"] {
   }
 }
 
-section{
-  padding: 0 space(1.25);
-
-  @include from(s) {
-    padding: 0;
-  }
+footer{
+  display: none;
 }
 
-footer{
-  // border: 3px solid aqua !important; //prueba
-  display: none;
+.slick-slide{
+  & > div {
+    display: block !important;
+    & > div {
+      display: block !important;
+    }
+  }
 }

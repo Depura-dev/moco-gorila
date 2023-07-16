@@ -1,8 +1,6 @@
 .main-slider-home {
-  border: 3px solid aqua; //prueba
   position: relative;
   .container {
-    @extend %t-res; //prueba
     @include from(l) {
       position: relative;
     }
@@ -13,5 +11,9 @@
 
   .slick-dotted.slick-slider {
     margin-bottom: 0;
+  }
+
+  .slider-controls__arrows {
+    top: 45%;
   }
 }

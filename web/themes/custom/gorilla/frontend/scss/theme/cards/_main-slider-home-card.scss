@@ -1,9 +1,10 @@
 .main-slider-home-card {
   $self: &;
+  padding: space(1) 0;
   &__image {
-    margin: 0;
     display: flex;
     justify-content: center;
+    margin: 0;
 
     @include from(l) {
       justify-content: flex-start;
@@ -12,26 +13,26 @@
     img {
       height: 100%;
       max-height: rem(600px);
-      width: auto;
       max-width: 100%;
+      width: auto;
       @include from(l) {
       }
     }
   }
 
   &__caption {
+    align-items: center;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
   }
 
   &__text-content {
-    max-width: rem(700px);
     display: flex;
     flex-direction: column;
     gap: space(1);
-    padding: space(1) space(2) space(2) space(1);
+    max-width: rem(700px);
     min-height: rem(300px);
+    padding: space(1) space(2) space(2) space(1);
 
     @include from(l){
     padding: 0 space(2) space(2) space(1);
@@ -52,4 +53,6 @@
       }
     }
   }
+
+  @include color-variant;
 }

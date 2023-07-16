@@ -1,0 +1,29 @@
+@mixin color-variant {
+  &--purple {
+    background-color: $purple;
+  }
+  &--yellow-violet {
+    background-color: $yellow;
+    p, div, span{
+      color: $purple;
+    }
+  }
+  &--orange-violet {
+    background-color: $orange;
+    p, div, span{
+      color: $white;
+    }
+  }
+  &--blue-violet {
+    background-color: $blue-lt;
+    p, div, span{
+      color: $purple;
+    }
+  }
+  &--red {
+    background-color: $red;
+  }
+  &--green {
+    background-color: $green;
+  }
+}

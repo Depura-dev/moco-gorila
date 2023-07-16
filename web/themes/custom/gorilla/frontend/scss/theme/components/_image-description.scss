@@ -1,6 +1,5 @@
 .container-image-description {
   &__container-image {
-    //?prueba de responsive puntos ---------
     @include fluid-aspect(6 4, "img");
     object-fit: cover;
     @include from(s) {

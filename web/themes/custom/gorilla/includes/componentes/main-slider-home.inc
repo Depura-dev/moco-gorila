@@ -33,6 +33,7 @@ function _render_slider_home_items(array $slider_home_items) {
     /** @var \Drupal\Core\Field\FieldItemListInterface */
 
     $slider_arr[] = [
+      'color_identity' => $slider_home_item->field_color_identity->view('full'),
       'title' => $slider_home_item->field_msh_text_slider_title->view('full'),
       'description' => $slider_home_item->field_msh_descripcion->view('full'),
       'image' => $slider_home_item->field_msh_image->view('full'),
