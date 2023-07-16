@@ -1,0 +1,12 @@
+.main-slider {
+  position: relative;
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+
+  .slider-controls__arrows {
+    max-width: 100%;
+    padding: 0 space(1.5);
+  }
+}

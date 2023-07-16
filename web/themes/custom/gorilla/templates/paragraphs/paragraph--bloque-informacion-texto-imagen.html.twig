@@ -29,9 +29,11 @@ not paragraph.isPublished() ? 'paragraph--unpublished',
           {{ description_bloque }}
         </p>
         <div class="informacion-texto-imagen--moco-quiz-text-items__link-bloque">
-          <a href="{{link_bloque}}" class="btn-primary">
-            {{ texto_link_bloque }}
-          </a>
+          {% if texto_link_bloque %}
+            <a href="{{link_bloque}}" class="btn-primary">
+              {{ texto_link_bloque }}
+            </a>
+          {% endif %}
         </div>
       </div>
     </div>

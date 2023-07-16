@@ -17,18 +17,17 @@
 					{{title_bloque}}</h2>
 			</header>
 			<div class="js-slider-producto-destacado m-0">
-				{% block content %}
-					{% for producto in prep.product %}
-						{% set title = producto.title[0] %}
-						{% set image = producto.image[0] %}
-						<div class="container-product-oustanding__content m-0">
-							<div class="container-product-oustanding__image">
-								<figure>
-									{{ image  }}
-								</figure>
-							</div>
+        {% block content %}
+        {% for producto in prep.product %}
+        {% set color = producto.color_identity['#items'].value %}
+        {% set title = producto.title[0] %}
+        {% set image = producto.image[0] %}
+        <div class="container-product-oustanding__content container-product-oustanding__content--{{color}} m-0">
+              <figure class="container-product-oustanding__image">
+                {{ image }}
+              </figure>
 							<div class="container-product-oustanding__title-content">
-								<h2 class="container-product-oustanding__title root">{{ title }}</h2>
+								<h2 class="container-product-oustanding__title root ">{{ title }}</h2>
 							</div>
 						</div>
 					{% endfor %}
