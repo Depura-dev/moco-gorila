@@ -1,24 +1,24 @@
-uuid: e90b4094-a589-4f40-9a15-5fdf9f3e7239
+uuid: 385c430d-db7d-4083-b0c2-1244f4724150
 langcode: es
-status: false
+status: true
 dependencies:
   config:
-    - system.menu.legal
+    - system.menu.social-media
   module:
     - mobile_detect
     - system
   theme:
     - gorilla
-id: legal_2
+id: socialmedia_2
 theme: gorilla
-region: header
-weight: -7
+region: footer_right_social
+weight: 0
 provider: null
-plugin: 'system_menu_block:legal'
+plugin: 'system_menu_block:social-media'
 settings:
-  id: 'system_menu_block:legal'
-  label: Legal
-  label_display: '0'
+  id: 'system_menu_block:social-media'
+  label: 'Social Media'
+  label_display: visible
   provider: system
   level: 1
   depth: 0

@@ -1,15 +1,15 @@
-uuid: 1944d70c-ed67-4978-b36a-b6d1ac546b7d
+uuid: 0ae9d274-e9c7-4ff9-abba-d9d41e5645d9
 langcode: es
-status: false
+status: true
 dependencies:
   module:
     - mobile_detect
     - system
   theme:
     - gorilla
-id: sitebranding_2
+id: sitebranding_3
 theme: gorilla
-region: header
+region: footer_left
 weight: 0
 provider: null
 plugin: system_branding_block
