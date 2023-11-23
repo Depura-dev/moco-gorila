@@ -17,3 +17,4 @@ jobs:
         server: 148.72.170.203
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
+        server-dir: /dep5/web/docroot/
