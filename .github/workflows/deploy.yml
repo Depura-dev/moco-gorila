@@ -12,9 +12,8 @@ jobs:
       uses: actions/checkout@v2
 
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      uses: Penguibird/FTP-Deploy-Action@4.2.0
       with:
-        server: 148.72.170.203
+        server: panel.depura-creatividad.com
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /web/docroot/
