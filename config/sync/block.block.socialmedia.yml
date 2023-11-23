@@ -1,6 +1,6 @@
 uuid: e245cb2c-5646-4dc9-a151-5c1664e0c973
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - system.menu.social-media
@@ -11,7 +11,7 @@ dependencies:
     - gorilla
 id: socialmedia
 theme: gorilla
-region: footer_right_social
+region: header
 weight: -7
 provider: null
 plugin: 'system_menu_block:social-media'

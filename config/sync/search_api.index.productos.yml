@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
+    - field.storage.node.field_color_identity_producto
     - field.storage.node.field_product_image
     - field.storage.node.field_product_type
     - search_api.server.default_server
@@ -23,6 +24,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
+  field_color_identity_producto:
+    label: 'Color Identity Producto'
+    datasource_id: 'entity:node'
+    property_path: field_color_identity_producto
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_color_identity_producto
   field_product_image:
     label: 'Product Image'
     datasource_id: 'entity:node'

@@ -1,26 +1,28 @@
-uuid: 1944d70c-ed67-4978-b36a-b6d1ac546b7d
+uuid: 09a94cd8-5503-4248-91b3-e998f681b0ee
 langcode: es
-status: false
+status: true
 dependencies:
+  config:
+    - system.menu.legal
   module:
     - mobile_detect
     - system
   theme:
     - gorilla
-id: sitebranding_2
+id: legal_3
 theme: gorilla
-region: header
+region: footer_right_legal
 weight: 0
 provider: null
-plugin: system_branding_block
+plugin: 'system_menu_block:legal'
 settings:
-  id: system_branding_block
-  label: 'Site branding'
+  id: 'system_menu_block:legal'
+  label: Legal
   label_display: '0'
   provider: system
-  use_site_logo: true
-  use_site_name: false
-  use_site_slogan: true
+  level: 1
+  depth: 0
+  expand_all_items: false
 visibility:
   mobile_detect_device_type:
     id: mobile_detect_device_type

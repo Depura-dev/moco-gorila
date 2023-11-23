@@ -1766,6 +1766,104 @@ body::-webkit-scrollbar-thumb {
 .product-page {
   position: relative; }
 
+.path-productos {
+  background-color: #33BEF0 !important; }
+  .path-productos .view-productos .view-header .product-view-header {
+    text-align: center;
+    padding: 10rem;
+    padding-bottom: 3rem; }
+    .path-productos .view-productos .view-header .product-view-header .product-view-title {
+      font-size: 5rem; }
+  .path-productos .view-productos .view-filters .form-select {
+    background: transparent;
+    background-image: none;
+    border: 0px; }
+    .path-productos .view-productos .view-filters .form-select ul {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+      .path-productos .view-productos .view-filters .form-select ul li {
+        margin: 0 3rem; }
+        .path-productos .view-productos .view-filters .form-select ul li a {
+          border-radius: 50px;
+          border: 4px solid #4E2583;
+          background: #FFD200;
+          width: 220px;
+          height: 60px;
+          display: block;
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
+          text-decoration: none;
+          color: #4e2583;
+          text-align: center;
+          font-family: Jost;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 2; }
+  .path-productos .view-productos .view-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 6rem; }
+    .path-productos .view-productos .view-content .views-row {
+      width: 25%;
+      display: block;
+      text-align: center;
+      border-bottom: 1px solid #c8c8c8c9; }
+      .path-productos .view-productos .view-content .views-row .views-field-nothing .item-product {
+        background-color: #FFD200;
+        padding: 2rem; }
+        .path-productos .view-productos .view-content .views-row .views-field-nothing .item-product-title {
+          background-color: #FF8A00;
+          width: -moz-fit-content;
+          width: fit-content;
+          text-align: center;
+          margin: auto;
+          /* titulo-prodp */
+          font-family: FatFrank;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: normal;
+          padding: 0.2rem 0.6rem; }
+          .path-productos .view-productos .view-content .views-row .views-field-nothing .item-product-title a {
+            color: #fff;
+            text-decoration: none; }
+        .path-productos .view-productos .view-content .views-row .views-field-nothing .item-product-image img {
+          width: auto;
+          height: 400px;
+          -o-object-fit: contain;
+             object-fit: contain; }
+        .path-productos .view-productos .view-content .views-row .views-field-nothing .item-product-presentation a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 1.2rem; }
+      .path-productos .view-productos .view-content .views-row .views-field-nothing .item-color-red {
+        background-color: #FE3B1F; }
+        .path-productos .view-productos .view-content .views-row .views-field-nothing .item-color-red .item-product-title {
+          background-color: #821919; }
+      .path-productos .view-productos .view-content .views-row .views-field-nothing .item-color-green {
+        background-color: #38D430; }
+        .path-productos .view-productos .view-content .views-row .views-field-nothing .item-color-green .item-product-title {
+          background-color: #19825d; }
+      .path-productos .view-productos .view-content .views-row .views-field-nothing .item-color-blue-violet {
+        background-color: #0097CE; }
+        .path-productos .view-productos .view-content .views-row .views-field-nothing .item-color-blue-violet .item-product-title {
+          background-color: #4E2583; }
+      .path-productos .view-productos .view-content .views-row .views-field-nothing .item-color-yellow-violet {
+        background-color: #FFD200; }
+        .path-productos .view-productos .view-content .views-row .views-field-nothing .item-color-yellow-violet .item-product-title {
+          background-color: #FF8A00; }
+
 .age-gate__image {
   margin: 0; }
   .age-gate__image img {

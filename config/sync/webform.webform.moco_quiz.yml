@@ -1,9 +1,7 @@
 uuid: 13efac99-1ed8-419b-9580-a828f5eb5cf2
 langcode: es
 status: open
-dependencies:
-  module:
-    - handler_custom
+dependencies: {  }
 weight: 0
 open: null
 close: null
@@ -40,7 +38,6 @@ elements: |-
         galan: 'Eres el que siempre llega tarde pero bien peinado'
         gamer: 'Eres el chico al que se le pueden olvidar los lápices, pero jamás sus súper audífonos '
         rockstar: 'Eres el más popular, nadie se resiste a ti'
-      '#required': true
   3:
     '#type': webform_wizard_page
     '#title': '3'
@@ -92,9 +89,10 @@ elements: |-
         galan: 'El stand de los besos '
         gamer: 'Outer Banks'
         punk_2: Dope
-        rockstar_2: 'Good Boys'
-        galan_2: Euphoria
+        punk_3: 'Good Boys'
+        punk_4: Euphoria
         gamer_2: 'Stranger Things'
+      '#required': true
   7:
     '#type': webform_wizard_page
     '#title': '7'
@@ -371,14 +369,5 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers:
-  handler_for_moco_of_gorila:
-    id: handler_custom
-    handler_id: handler_for_moco_of_gorila
-    label: 'Handler for Moco of Gorila'
-    notes: 'Logica de Redirección'
-    status: true
-    conditions: {  }
-    weight: 0
-    settings: {  }
+handlers: {  }
 variants: {  }

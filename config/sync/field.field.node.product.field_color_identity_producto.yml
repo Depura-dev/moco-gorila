@@ -1,0 +1,23 @@
+uuid: f921edc1-213f-4254-a5fa-abed8d9eca1f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_color_identity_producto
+    - node.type.product
+  module:
+    - options
+id: node.product.field_color_identity_producto
+field_name: field_color_identity_producto
+entity_type: node
+bundle: product
+label: 'Color Identity Producto'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: purples
+default_value_callback: ''
+settings: {  }
+field_type: list_string

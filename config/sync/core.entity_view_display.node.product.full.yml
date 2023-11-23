@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.product.body
+    - field.field.node.product.field_color_identity_producto
     - field.field.node.product.field_product_features
     - field.field.node.product.field_product_image
     - field.field.node.product.field_product_line
@@ -81,6 +82,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_color_identity_producto: true
   field_product_thumbnail: true
   langcode: true
   search_api_excerpt: true

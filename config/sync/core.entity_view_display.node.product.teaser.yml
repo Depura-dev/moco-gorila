@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.product.body
+    - field.field.node.product.field_color_identity_producto
     - field.field.node.product.field_product_features
     - field.field.node.product.field_product_image
     - field.field.node.product.field_product_line
@@ -46,6 +47,7 @@ content:
     region: content
 hidden:
   body: true
+  field_color_identity_producto: true
   field_product_features: true
   field_product_image: true
   field_product_presentations: true
