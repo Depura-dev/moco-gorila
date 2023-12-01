@@ -1,110 +1,134 @@
 .main-header {
-  background-color: rgba($blue, .95);
-  position: fixed;
+  background-color: rgba($blue, 0.95);
+  // position: fixed;
   justify-content: center;
   padding: 0;
 
-  .navbar-toggler{
-    color:transparent;
+  .navbar-brand{
+    margin-top: 10px;
+  }
+
+  .navbar-toggler {
+    color: transparent;
     padding: 0;
     position: absolute;
     right: 0;
+
+    &-icon {
+      @include up-to(xs) {
+        color: #4e2583;
+        font-size: 1.875rem;
+        margin-left: -3.5rem !important;
+        margin-top: -0.0625rem !important;
+        background: white;
+        align-items: center;
+        display: grid;
+        border-radius: 50%;
+      }
+    }
   }
-.lupa{
-  margin-top: -70px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 90px;
-  @include from(m){
-    margin-top: 120px;
+  .lupa {
+    margin-top: -70px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+    @include from(m) {
+      margin-top: 120px;
+    }
+    @include from(l) {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+    }
+    &-icon {
+      @include imageBg(
+        "../img/buscador.moco-de-gorila.svg",
+        rem(40px),
+        rem(40px)
+      );
+    }
   }
-  @include from(l){
-    margin: 0;
-    padding: 0;
-    position: absolute;
+  .close {
+    margin-right: 70vw;
+    margin-top: 10px;
+    @include from(m) {
+      margin-left: 15px;
+    }
+    @include imageBg(
+      "../img/icono_cerrar-moco-de-gorila.svg",
+      rem(30px),
+      rem(30px)
+    );
+    @include from(l) {
+      display: none;
+    }
   }
-  &-icon{
-    @include imageBg('../img/buscador.moco-de-gorila.svg', rem(40px), rem(40px));
-  }
-}
-.close{
-  margin-right: 70vw;
-  margin-top: 10px;
-  @include from(m){
-    margin-left: 15px;
-  }
-  @include imageBg('../img/icono_cerrar-moco-de-gorila.svg', rem(30px), rem(30px));
-  @include from(l){
-    display: none;
-  }
-}
-  .navbar-collapse{
+  .navbar-collapse {
     background-color: $purple;
     margin-left: -22%;
-    @include from(m){
+    @include from(m) {
       margin-left: 50%;
     }
-    @include from(l){
+    @include from(l) {
       background-color: transparent;
     }
   }
   &__content {
     width: 100%;
     z-index: 2000;
-    ul{
-      padding-top:rem(100px);
+    ul {
+      padding-top: rem(100px);
       height: 75vh;
-      @include from(m){
+      @include from(m) {
         margin-top: rem(-60px);
         height: 45vh;
       }
-      @include from(l){
-        gap:35px;
+      @include from(l) {
+        gap: 35px;
         height: max-content;
         justify-content: center;
         margin: 0;
         padding: 0;
       }
-      @include from(xl){
-        gap:rem(100px);
+      @include from(xl) {
+        gap: rem(100px);
       }
-      li a{
-        color:$white;
+      li a {
+        color: $white;
         font-size: 20px;
       }
     }
-    .region{
+    .region {
       background-color: transparent;
     }
-    .region-nav-branding{
+    .region-nav-branding {
       margin: 0;
     }
-    .region-nav-main{
+    .region-nav-main {
       width: 100%;
     }
-    .navbar-collapse{
+    .navbar-collapse {
       width: 100%;
-      @include from(m){
+      @include from(m) {
         width: 25%;
       }
-      @include from(l){
+      @include from(l) {
         margin-left: 0%;
       }
-
     }
-    @include from(l){
+    @include from(l) {
       padding: 0 rem(10px);
     }
-    @include from(xl){
+    @include from(xl) {
       padding: 0 rem(70px);
     }
-    .navbar-toggler-icon{
-      color:$purple;
+    .navbar-toggler-icon {
+      color: $purple;
       font-size: rem(30px);
       margin-left: rem(120px);
       margin-top: rem(15px);
     }
-    .dropbutton-wrapper{
+    .dropbutton-wrapper {
       // display: none;
     }
   }
@@ -117,14 +141,27 @@
   }
 
   .site-logo {
-    @include imageBg('../img/logo.svg', rem(57px), rem(124px));
+    @include imageBg("../img/logo.svg", rem(57px), rem(124px));
 
-    @include from(l){
-      @include imageBg('../img/logo.svg', rem(75px), rem(152px));
+    @include from(l) {
+      @include imageBg("../img/logo.svg", rem(75px), rem(152px));
     }
   }
 
   .navbar {
     padding: 0;
+  }
+}
+
+.user-logged-in {
+  .fixed-top {
+    position: relative;
+  }
+}
+
+.node__meta {
+  padding: 2px;
+  @include up-to(xs) {
+    padding: 0px;
   }
 }

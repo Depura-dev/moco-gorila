@@ -1,0 +1,52 @@
+.error-404 {
+  background: $blue-lt;
+  background-color: $blue-lt !important;
+  .node__content {
+    margin: 0em 0px 7em;
+    text-align: center;
+  }
+  .field--name-field-image-error {
+    img {
+      width: 50%;
+      margin: auto;
+      display: block;
+
+      @include up-to(xs) {
+        width: 70%;
+      }
+    }
+  }
+
+  h2 {
+    background: #0f2861;
+    box-shadow: 0.2em 0 0 #0f2861, -0.2em 0 0 #0f2861;
+  }
+
+  .field--name-body {
+    margin: auto;
+    margin-top: 15px;
+    width: 450px;
+    p {
+      color: white;
+    }
+
+    a {
+      position: relative;
+      top: 15px;
+      border-radius: 50px;
+      border: 4px solid #4e2583;
+      background: #fff;
+      color: #4e2583;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    @include up-to(xs) {
+      width: 300px;
+    }
+  }
+}

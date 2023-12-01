@@ -1010,6 +1010,9 @@ body::-webkit-scrollbar-thumb {
     @media only screen and (min-width: 576px) {
       .slider-controls__dots {
         top: 38.75rem; } }
+    @media only screen and (max-width: 575px) {
+      .slider-controls__dots {
+        top: 2rem; } }
     @media only screen and (min-width: 992px) {
       .slider-controls__dots {
         top: initial;
@@ -1546,15 +1549,28 @@ body::-webkit-scrollbar-thumb {
 
 .main-header {
   background-color: rgba(0, 151, 206, 0.95);
-  position: fixed;
   -ms-flex-pack: center;
       justify-content: center;
   padding: 0; }
+  .main-header .navbar-brand {
+    margin-top: 10px; }
   .main-header .navbar-toggler {
     color: transparent;
     padding: 0;
     position: absolute;
     right: 0; }
+    @media only screen and (max-width: 575px) {
+      .main-header .navbar-toggler-icon {
+        color: #4e2583;
+        font-size: 1.875rem;
+        margin-left: -3.5rem !important;
+        margin-top: -0.0625rem !important;
+        background: white;
+        -ms-flex-align: center;
+            align-items: center;
+        display: -ms-grid;
+        display: grid;
+        border-radius: 50%; } }
   .main-header .lupa {
     margin-top: -70px;
     display: -ms-flexbox;
@@ -1688,6 +1704,15 @@ body::-webkit-scrollbar-thumb {
         width: 9.5rem; } }
   .main-header .navbar {
     padding: 0; }
+
+.user-logged-in .fixed-top {
+  position: relative; }
+
+.node__meta {
+  padding: 2px; }
+  @media only screen and (max-width: 575px) {
+    .node__meta {
+      padding: 0px; } }
 
 .region.region-content {
   padding: 0; }
@@ -1863,6 +1888,45 @@ body::-webkit-scrollbar-thumb {
         background-color: #FFD200; }
         .path-productos .view-productos .view-content .views-row .views-field-nothing .item-color-yellow-violet .item-product-title {
           background-color: #FF8A00; }
+
+.error-404 {
+  background: #33BEF0;
+  background-color: #33BEF0 !important; }
+  .error-404 .node__content {
+    margin: 0em 0px 7em;
+    text-align: center; }
+  .error-404 .field--name-field-image-error img {
+    width: 50%;
+    margin: auto;
+    display: block; }
+    @media only screen and (max-width: 575px) {
+      .error-404 .field--name-field-image-error img {
+        width: 70%; } }
+  .error-404 h2 {
+    background: #0f2861;
+    box-shadow: 0.2em 0 0 #0f2861, -0.2em 0 0 #0f2861; }
+  .error-404 .field--name-body {
+    margin: auto;
+    margin-top: 15px;
+    width: 450px; }
+    .error-404 .field--name-body p {
+      color: white; }
+    .error-404 .field--name-body a {
+      position: relative;
+      top: 15px;
+      border-radius: 50px;
+      border: 4px solid #4e2583;
+      background: #fff;
+      color: #4e2583;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding: 10px 20px;
+      text-decoration: none; }
+    @media only screen and (max-width: 575px) {
+      .error-404 .field--name-body {
+        width: 300px; } }
 
 .age-gate__image {
   margin: 0; }

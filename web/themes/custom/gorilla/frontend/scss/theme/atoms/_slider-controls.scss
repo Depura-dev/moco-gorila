@@ -59,12 +59,17 @@ $zindex-pagination: 101;
       top: rem(620px);
     }
 
+    @include up-to(xs){
+      top: 2rem;
+    }
+
     @include from(l){
       top: initial;
       left: initial;
       bottom: space(1);
     }
     .slick-dots {
+
       @include center("horizontal");
       bottom: 100%;
       width: auto;
