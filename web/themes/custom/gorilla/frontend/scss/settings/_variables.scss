@@ -43,6 +43,7 @@ $font-secondary: 'FatFrank';
 
 // Media queries
 $breakpoints-min: (
+  'xs': 340px,
   's': 576px,
   'm': 768px,
   'l': 992px,
@@ -57,6 +58,7 @@ $breakpoints-max: (
 );
 
 $container-max-widths: (
+  'xs': 340px,
   's': 540px,
   'm': 720px,
   'l': 960px,
