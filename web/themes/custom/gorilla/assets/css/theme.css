@@ -2009,6 +2009,40 @@ body::-webkit-scrollbar-thumb {
     display: -ms-flexbox !important;
     display: flex !important; } }
 
+/* styles intern product */
+.page-node-type-product main {
+  background: #33bef0; }
+
+.page-node-type-product .body-text-product {
+  background: #0097ce;
+  padding: 8rem 140px; }
+  .page-node-type-product .body-text-product h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 9px;
+    background: #0f2861;
+    box-shadow: 0.2em 0 0 #0f2861, -0.2em 0 0 #0f2861; }
+  .page-node-type-product .body-text-product .field--name-body {
+    margin-top: 3rem; }
+    .page-node-type-product .body-text-product .field--name-body p {
+      color: white; }
+
+.page-node-type-product .field--name-field-product-image img {
+  width: auto;
+  height: 400px;
+  display: block;
+  margin: auto; }
+
+.page-node-type-product .body-image-product {
+  padding: 8rem 140px; }
+
+.page-node-type-product .blue-violet h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-left: 9px;
+  background: #4e2583;
+  box-shadow: 0.2em 0 0 #4e2583, -0.2em 0 0 #4e2583; }
+
 .age-gate__image {
   margin: 0; }
   .age-gate__image img {
