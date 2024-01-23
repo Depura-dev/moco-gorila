@@ -78,9 +78,9 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-<article{{attributes.addClass(classes)}}>
+<article{{ attributes.addClass(classes) }}>
 	<div class="container webform-content">
-		<div class="col-12 col-md-12 d-flex">
+		<div class="col-12 col-md-12 desktop-flex mobile-block">
 			<div class="col-md-6">
 				{{ title_prefix }}
 				<h1{{title_attributes}}>
