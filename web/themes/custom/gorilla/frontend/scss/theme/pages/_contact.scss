@@ -1,0 +1,87 @@
+/* page contacto */
+
+.page-contacto {
+  main {
+    background: url("../img/contact.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-color: #8c80b2;
+  }
+  .webform-content {
+    margin: 10rem auto;
+  }
+  article {
+    .field--name-body {
+      width: 70%;
+      display: block;
+      margin-top: 4rem;
+    }
+
+    h1 {
+      padding: 0px;
+      font-size: 4rem;
+      margin-left: 14px;
+      span {
+        color: white;
+        text-decoration: none;
+        font-size: 54px;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    p {
+      color: white;
+    }
+
+    .field--name-webform {
+      background: #ffd200;
+      border-radius: 40px;
+      padding: 40px;
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        border-radius: 50px;
+        border: 4px solid #4e2583;
+        background: #fff;
+        margin: 1rem 0rem;
+        padding: 0.6rem 2rem;
+
+        &::placeholder {
+          color: #4e2583;
+          font-size: 1.2em;
+          margin-left: 15px;
+          display: block;
+        }
+      }
+
+      label {
+        display: none;
+      }
+
+      .form-item-he-leido-y-acepto-terminos-y-condiciones {
+        display: flex;
+        flex-wrap: wrap;
+        label {
+          display: flex !important;
+          align-content: center;
+          flex-wrap: wrap;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-block {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) {
+  .desktop-flex {
+    display: flex !important;
+  }
+}

@@ -1928,6 +1928,87 @@ body::-webkit-scrollbar-thumb {
       .error-404 .field--name-body {
         width: 300px; } }
 
+/* page contacto */
+.page-contacto main {
+  background: url(../css/0b5dd97d65a8d188d635169fe570f193.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-color: #8c80b2; }
+
+.page-contacto .webform-content {
+  margin: 10rem auto; }
+
+.page-contacto article .field--name-body {
+  width: 70%;
+  display: block;
+  margin-top: 4rem; }
+
+.page-contacto article h1 {
+  padding: 0px;
+  font-size: 4rem;
+  margin-left: 14px; }
+  .page-contacto article h1 span {
+    color: white;
+    text-decoration: none;
+    font-size: 54px; }
+  .page-contacto article h1 a {
+    text-decoration: none; }
+
+.page-contacto article p {
+  color: white; }
+
+.page-contacto article .field--name-webform {
+  background: #ffd200;
+  border-radius: 40px;
+  padding: 40px; }
+  .page-contacto article .field--name-webform input[type="text"],
+  .page-contacto article .field--name-webform input[type="email"],
+  .page-contacto article .field--name-webform textarea {
+    border-radius: 50px;
+    border: 4px solid #4e2583;
+    background: #fff;
+    margin: 1rem 0rem;
+    padding: 0.6rem 2rem; }
+    .page-contacto article .field--name-webform input[type="text"]:-ms-input-placeholder,
+    .page-contacto article .field--name-webform input[type="email"]:-ms-input-placeholder,
+    .page-contacto article .field--name-webform textarea:-ms-input-placeholder {
+      color: #4e2583;
+      font-size: 1.2em;
+      margin-left: 15px;
+      display: block; }
+    .page-contacto article .field--name-webform input[type="text"]::placeholder,
+    .page-contacto article .field--name-webform input[type="email"]::placeholder,
+    .page-contacto article .field--name-webform textarea::placeholder {
+      color: #4e2583;
+      font-size: 1.2em;
+      margin-left: 15px;
+      display: block; }
+  .page-contacto article .field--name-webform label {
+    display: none; }
+  .page-contacto article .field--name-webform .form-item-he-leido-y-acepto-terminos-y-condiciones {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .page-contacto article .field--name-webform .form-item-he-leido-y-acepto-terminos-y-condiciones label {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin-left: 8px; }
+
+@media (max-width: 767px) {
+  .mobile-block {
+    display: block !important; } }
+
+@media (min-width: 768px) {
+  .desktop-flex {
+    display: -ms-flexbox !important;
+    display: flex !important; } }
+
 .age-gate__image {
   margin: 0; }
   .age-gate__image img {
