@@ -91,14 +91,18 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
-  form_attributes: {  }
+  form_attributes:
+    class:
+      - contact-page
   form_method: ''
   form_action: ''
   share: false
   share_node: false
   share_theme_name: ''
   share_title: true
-  share_page_body_attributes: {  }
+  share_page_body_attributes:
+    class:
+      - contact-page
   submission_label: ''
   submission_exception_message: ''
   submission_locked_message: ''
@@ -137,6 +141,8 @@ settings:
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
